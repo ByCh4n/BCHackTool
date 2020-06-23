@@ -15,13 +15,13 @@ Root Olarak Giriş Yapmadıysanız Root Olarak Giriş Yapınız Yada Komutların
 
 Installation(Kurulum):
 
-$ git clone https://github.com/ByCh4n/BCHackTool
+💲 git clone https://github.com/ByCh4n/BCHackTool
 
-$ cd BCHackTool
+💲 cd BCHackTool
 
-$ chmod +x bchacktool.sh
+💲 chmod +x bchacktool.sh
 
-$ sudo bash bchacktool.sh
+💲 sudo bash bchacktool.sh
 
 Dilerim Ki Sizler İçin Yararlı Olmuştur. :)
 
