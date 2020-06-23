@@ -9,6 +9,8 @@ Youtube Videolarımda Kullandığım Bütün Toolları Bu Program Sayesinde Tek 
 
 Kullanımı Çok Basit Shell Üzerine Yazılmış Bir Programdır Ve Siz İşlem Yapmadan Otomatik Olarak Kurulumları Yaparak Bütün Programlara Giriş Yapıcaktır.
 
+Her Yeni Videoda Program Güncellenicektir.
+
 Root Olarak Giriş Yapmadıysanız Root Olarak Giriş Yapınız Yada Komutların Başlarına "sudo" Komutunu Eklemeyi Unutmayınız !
 
 Installation(Kurulum):
