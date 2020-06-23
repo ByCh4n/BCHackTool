@@ -24,3 +24,6 @@ $ sudo bash bchacktool.sh
 Dilerim Ki Sizler İçin Yararlı Olmuştur. :)
 
 Kali Linux ✔
+
+![Ekran Alıntısı](https://user-images.githubusercontent.com/67187998/85402253-07c61300-b564-11ea-930d-99610b9ff983.PNG)
+
