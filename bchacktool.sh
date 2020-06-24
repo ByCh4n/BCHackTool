@@ -254,7 +254,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 chmod +x bluforcefb.py
                 clear
                 sudo apt-get install python2
-                sudo apt-get install python2-pip
+                sudo apt-get install python-pip
                 clear
                 sudo pip2 install mechanize
                 clear
