@@ -15,7 +15,9 @@ Her Yeni Videoda Program Güncellenicektir. 🆕
 
 Root Olarak Giriş Yapmadıysanız Root Olarak Giriş Yapınız Yada Komutların Başlarına "sudo" Komutunu Eklemeyi Unutmayınız ❕
 
-Installation(Kurulum):
+--------------------------------------------------------------------------
+
+Kali Linux - Installation(Kurulum):
 
 💲 git clone https://github.com/ByCh4n/BCHackTool
 
@@ -25,11 +27,21 @@ Installation(Kurulum):
 
 💲 sudo bash bchacktool.sh
 
+Termux - Installation(Kurulum):
+
+💲 git clone https://github.com/ByCh4n/BCHackTool
+
+💲 cd BCHackTool
+
+💲 bash bchacktool-termux.sh
+
+--------------------------------------------------------------------------
+
 Dilerim Ki Sizler İçin Yararlı Olmuştur. :)
 
 Kali Linux ✔
 
-Termux ❔
+Termux ✔
 
 ![Ekran Alıntısı](https://user-images.githubusercontent.com/67187998/85402253-07c61300-b564-11ea-930d-99610b9ff983.PNG)
 
