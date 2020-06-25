@@ -12,16 +12,16 @@ blue='\e[1;34m'
 echo ""
 sleep 2
 # Root Kontrol
-[[ `id -u` -eq 0 ]] > /dev/null 2>&1 || { echo  $red "Programi Calistirmak İcin Root Olarak Giris Yapin Ya da Basina Sudo Koyunuz."; echo ; exit 1; }
+[[ `id -u` -eq 0 ]] > /dev/null 2>&1 || { echo  $red "Programı Çalıştırmak İçin Root Olarak Giriş Yapınız Yada Komutun Başına Sudo Koyunuz."; echo ; exit 1; }
 
 # detect ctrl+c exiting
 trap ctrl_c INT
 ctrl_c() {
 clear
-echo -e $red"[*] (Ctrl + C ) Tespit Edildi Cikiliyor..."
+echo -e $red"[*] (Ctrl + C ) Tespit Edildi Çıkılıyor..."
 sleep 1
 echo ""
-echo -e $yellow"[*] BCHackTool Programini Tercih Ettiginiz Icin Tesekkurler  {ByChan} :)"
+echo -e $yellow"[*] BCHackTool Programını Tercih Ettiğiniz İçin Teşekkürler {ByChan} :)"
 exit
 }
 clear
@@ -30,9 +30,9 @@ function checkinternet {
   ping -c 1 google.com > /dev/null
   if [[ "$?" != 0 ]]
   then
-    echo  "Interet Kontrol Ediliyor...: BAGLANAMADI
+    echo  "Internet Kontrol Ediliyor...: BAGLANAMADI
     Bu Programin Etkin Bir Internete Ihtiyaci Var"
-    echo "Simdi Cikiliyor"
+    echo "Simdi Çıkılıyor"
     echo && sleep 2
     kexit
   else
@@ -62,39 +62,39 @@ echo ""
 
 echo ""
 echo -e $cyan"    Create by           $white":" $red ByChan  "
-echo -e $cyan"    Youtube Kanalim     $white":" $red https://www.youtube.com/ByChan"
+echo -e $cyan"    Youtube Kanalım     $white":" $red https://www.youtube.com/ByChan"
 echo -e $cyan"    Github              $white":" $red https://github.com/ByCh4n"
 echo -e $cyan"    Instagram           $white":" $red huseyinaltns"
 echo -e $cyan ""
 echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~~    ";
         echo
-        echo "[1] ✔ Instagram Takipci Hilesi         [2] ✔ Wifi Kick"
-        echo "[3] ✔ Otomatik Ip Degistirme           [4] ✔ Sosyal Muhendislik"
-        echo "[5] ✔ ByChan Ddos                      [6] ✔ Kisi Analizi"
-        echo "[7] ✔ Konum Ogrenme                    [8] ✔ Instagram BruteForce"
-        echo "[9] ✔ Facebook BruteForce              [10] ✔ WordList Olusturma"
-        echo "[11] ✔ Whatsapp Spam Bomber            [12] ✔ Rar-Zip Sifre Kirici"
-        echo "[q] ✔ Quit                             [x] ✔ Otomatik Güncelleyici"
+        echo "[1] ✔ Instagram Takipçi Hilesi         [2] ✔ Wifi Kick"
+        echo "[3] ✔ Otomatik Ip Değiştirme           [4] ✔ Sosyal Mühendislik"
+        echo "[5] ✔ ByChan Ddos                      [6] ✔ Kişi Analizi"
+        echo "[7] ✔ Konum Öğrenme                    [8] ✔ Instagram BruteForce"
+        echo "[9] ✔ Facebook BruteForce              [10] ✔ WordList Oluşturma"
+        echo "[11] ✔ Whatsapp Spam Bomber            [12] ✔ Rar-Zip Şifre Kırıcı"
+        echo "[q] ✔ Çıkış                             [x] ✔ Otomatik Güncelleyici"
         echo
         read -p "Numara Giriniz>: " option
         echo
         
         case "$option" in 
             1)  
-                echo -e $red "~~~~~~~~~~~~~~~ Instagram Takipci Hilesi ~~~~~~~~~~~~~~~"
+                echo -e $red "~~~~~~~~~~~~~~~ Instagram Takipçi Hilesi ~~~~~~~~~~~~~~~"
                 sleep 2
                 git clone https://github.com/thelinuxchoice/inshackle > /dev/null 2>&1
                 echo
-                echo  -e $green "[ ✔ ] Instagram Takipci Hilesi Indirildi " 
+                echo  -e $green "[ ✔ ] Instagram Takipçi Hilesi Indirildi " 
                 cd inshackle
                 chmod +x inshackle.sh
                 clear
                 bash inshackle.sh
                 cd ..
                 echo ""
-                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandi ~~~~~~~~~~~~~~~"
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandı ~~~~~~~~~~~~~~~"
                 echo
-                echo -e $green " 【!】 Ana Menuye Don 【!】 "
+                echo -e $green " 【!】 Ana Menüye Dön 【!】 "
                 read -p "pess any key to return ..."
                 clear
                 ;;
@@ -103,7 +103,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 sleep 2
                 git clone https://github.com/k4m4/kickthemout > /dev/null 2>&1
                 echo
-                echo -e $green "[ ✔ ] Wifi Kick  Indirildi "
+                echo -e $green "[ ✔ ] Wifi Kick Indirildi "
                 cd kickthemout
                 sudo apt-get install nmap
                 clear
@@ -118,18 +118,18 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 sudo python3 kickthemout.py
                 cd ..
                 echo ""
-                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandi ~~~~~~~~~~~~~~~"
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandı ~~~~~~~~~~~~~~~"
                 echo
-                echo -e $green " 【!】 Ana Menuye Don 【!】 "
+                echo -e $green " 【!】 Ana Menüye Dön 【!】 "
                 read -p "pess any key to return ..."
                 clear
                 ;;
             3)  
-                echo -e $red "~~~~~~~~~~~~~~~ Otomatik Ip Degistirme ~~~~~~~~~~~~~~~"
+                echo -e $red "~~~~~~~~~~~~~~~ Otomatik Ip Değiştirme ~~~~~~~~~~~~~~~"
                 sleep 2
                 git clone https://github.com/SusmithKrishnan/torghost > /dev/null 2>&1
                 echo
-                echo -e $green "[ ✔ ] Otomatik Ip Degistirme Indirildi "
+                echo -e $green "[ ✔ ] Otomatik Ip Değiştirme Indirildi "
                 cd torghost
                 chmod +x install.sh
                 clear
@@ -138,9 +138,9 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 torghost -s
                 cd ..
                 echo ""
-                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandi ~~~~~~~~~~~~~~~"
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandı ~~~~~~~~~~~~~~~"
                 echo
-                echo -e $green " 【!】 Ana Menuye Don 【!】 "
+                echo -e $green " 【!】 Ana Menüye Don 【!】 "
                 read -p "pess any key to return ..."
                 clear
                 ;;
@@ -162,9 +162,9 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 sudo python3 HiddenEye.py
                 cd ..
                 echo ""
-                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandi ~~~~~~~~~~~~~~~"
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandı ~~~~~~~~~~~~~~~"
                 echo
-                echo -e $green " 【!】 Ana Menuye Don 【!】 "
+                echo -e $green " 【!】 Ana Menüye Dön 【!】 "
                 read -p "pess any key to return ..."
                 clear
                 ;;
@@ -173,7 +173,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 sleep 2
                 git clone https://github.com/ByCh4n/Ddos-Attack-ByChan > /dev/null 2>&1
                 echo
-                echo -e $green "[ ✔ ] ByChan Ddos  Indirildi "
+                echo -e $green "[ ✔ ] ByChan Ddos Indirildi "
                 cd Ddos-Attack-ByChan
                 chmod +x Ddos.py
                 clear
@@ -182,33 +182,33 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 echo ""
                 echo -e "~~~~~~~~~~~~~~~ Tamamlandi ~~~~~~~~~~~~~~~"
                 echo
-                echo -e $green " 【!】 Ana Menuye Don 【!】 "
+                echo -e $green " 【!】 Ana Menüye Dön 【!】 "
                 read -p "pess any key to return ..."
                 clear
                 ;;
             6)  
-                echo -e $red "~~~~~~~~~~~~~~~ Kisi Analizi ~~~~~~~~~~~~~~~"
+                echo -e $red "~~~~~~~~~~~~~~~ Kişi Analizi ~~~~~~~~~~~~~~~"
                 sleep 2
                 git clone https://github.com/thelinuxchoice/userrecon > /dev/null 2>&1
                 echo
-                echo -e $green "[ ✔ ] Kisi Analizi Indirildi "
+                echo -e $green "[ ✔ ] Kişi Analizi Indirildi "
                 cd userrecon
                 chmod +x userrecon.sh
                 clear
                 ./userrecon.sh
                 cd ..
-                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandi ~~~~~~~~~~~~~~~"
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandı ~~~~~~~~~~~~~~~"
                 echo
-                echo -e $green " 【!】 Ana Menuye Don 【!】 "
+                echo -e $green " 【!】 Ana Menüye Dön 【!】 "
                 read -p "pess any key to return ..."
                 clear
                 ;;
             7)  
-                echo -e $red "~~~~~~~~~~~~~~~ Konum Ogrenme ~~~~~~~~~~~~~~~"
+                echo -e $red "~~~~~~~~~~~~~~~ Konum Öğrenme ~~~~~~~~~~~~~~~"
                 sleep 2
                 git clone https://github.com/thewhiteh4t/seeker > /dev/null 2>&1
                 echo
-                echo -e $green "[ ✔ ] Konum Ogrenme  Indirildi "
+                echo -e $green "[ ✔ ] Konum Öğrenme Indirildi "
                 cd seeker
                 chmod +x install.sh
                 chmod +x seeker.py
@@ -219,9 +219,9 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 clear
                 sudo python3 seeker.py -t manual -k xxx
                 cd ..
-                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandi ~~~~~~~~~~~~~~~"
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandı ~~~~~~~~~~~~~~~"
                 echo ""
-                echo -e $green " 【!】 Ana Menuye Don 【!】 "
+                echo -e $green " 【!】 Ana Menüye Dön 【!】 "
                 read -p "pess any key to return ..."
                 clear
                 ;;
@@ -230,7 +230,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 sleep 2
                 git clone https://github.com/thelinuxchoice/instashell > /dev/null 2>&1
                 echo
-                echo -e $green "[ ✔ ] Instagram BruteForce  Indirildi "
+                echo -e $green "[ ✔ ] Instagram BruteForce Indirildi "
                 echo -e $yellow "" 
                 cd instashell
                 chmod +x instashell.sh
@@ -242,9 +242,9 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 sudo ./instashell.sh
                 cd ..
                 echo ""
-                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandi ~~~~~~~~~~~~~~~"
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandı ~~~~~~~~~~~~~~~"
                 echo
-                echo -e $green " 【!】 Ana Menuye Don 【!】 "
+                echo -e $green " 【!】 Ana Menüye Dön 【!】 "
                 read -p "pess any key to return ..."
                 clear
                 ;;
@@ -265,18 +265,18 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 sudo python2 bluforcefb.py
                 cd ..
                 echo ""
-                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandi ~~~~~~~~~~~~~~~"
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandı ~~~~~~~~~~~~~~~"
                 echo
-                echo -e $green " 【!】 Ana Menuye Don 【!】 "
+                echo -e $green " 【!】 Ana Menüye Dön 【!】 "
                 read -p "pess any key to return ..."
                 clear
                 ;;
 	   10)  
-                echo -e $red "~~~~~~~~~~~~~~~ WordList Olusturma ~~~~~~~~~~~~~~~"
+                echo -e $red "~~~~~~~~~~~~~~~ WordList Oluşturma ~~~~~~~~~~~~~~~"
                 sleep 2
                 git clone https://github.com/Mebus/cupp > /dev/null 2>&1
                 echo
-                echo  -e $green "[ ✔ ] WordList Olusturma Indirildi " 
+                echo  -e $green "[ ✔ ] WordList Oluşturma Indirildi " 
                 cd cupp
                 chmod +x cup.py
                 clear
@@ -285,9 +285,9 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 sudo python3 cupp.py -i
                 cd ..
                 echo ""
-                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandi ~~~~~~~~~~~~~~~"
+                echo -e $red "~~~~~~~~~~~~~~~ TamamlandI ~~~~~~~~~~~~~~~"
                 echo
-                echo -e $green " 【!】 Ana Menuye Don 【!】 "
+                echo -e $green " 【!】 Ana Menüye Dön 【!】 "
                 read -p "pess any key to return ..."
                 clear
                 ;;
@@ -306,18 +306,18 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 sudo python3 spam.py
                 cd ..
                 echo ""
-                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandi ~~~~~~~~~~~~~~~"
+                echo -e $red "~~~~~~~~~~~~~~~ TamamlandI ~~~~~~~~~~~~~~~"
                 echo
-                echo -e $green " 【!】 Ana Menuye Don 【!】 "
+                echo -e $green " 【!】 Ana Menüye Dön 【!】 "
                 read -p "pess any key to return ..."
                 clear
                 ;;
 	   12)  
-                echo -e $red "~~~~~~~~~~~~~~~ Rar-Zip Sifre Kirici ~~~~~~~~~~~~~~~"
+                echo -e $red "~~~~~~~~~~~~~~~ Rar-Zip Şifre Kırıcı ~~~~~~~~~~~~~~~"
                 sleep 2
                 git clone https://github.com/ByCh4n/Rar-Zip-Crack > /dev/null 2>&1
                 echo
-                echo  -e $green "[ ✔ ] Rar-Zip Sifre Kirici Indirildi " 
+                echo  -e $green "[ ✔ ] Rar-Zip Şifre Kırıcı Indirildi " 
                 cd Rar-Zip-Crack
                 chmod +x rar_zip_cracker.py
                 clear
@@ -326,9 +326,9 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 sudo python3 rar_zip_cracker.py
                 cd ..
                 echo ""
-                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandi ~~~~~~~~~~~~~~~"
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandı ~~~~~~~~~~~~~~~"
                 echo
-                echo -e $green " 【!】 Ana Menuye Don 【!】 "
+                echo -e $green " 【!】 Ana Menüye Dön 【!】 "
                 read -p "pess any key to return ..."
                 clear
                 ;;
@@ -370,7 +370,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 echo ""
                 echo -e $red "~~~~~~~~~~~~~~~ Otomatik Güncelleyici Tamamlandı ~~~~~~~~~~~~~~~"
                 echo
-                echo -e $green " 【!】 Ana Menuye Don 【!】 "
+                echo -e $green " 【!】 Ana Menüye Dön 【!】 "
                 read -p "pess any key to return ..."
                 clear
                 ;;
