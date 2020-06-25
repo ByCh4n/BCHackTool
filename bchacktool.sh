@@ -74,14 +74,14 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
         echo "[7] ✔ Konum Ogrenme                    [8] ✔ Instagram BruteForce"
         echo "[9] ✔ Facebook BruteForce              [10] ✔ WordList Olusturma"
         echo "[11] ✔ Whatsapp Spam Bomber            [12] ✔ Rar-Zip Sifre Kirici"
-        echo "[q] ✔ Quit"
+        echo "[q] ✔ Quit                             [x] ✔ Otomatik Güncelleyici"
         echo
         read -p "Numara Giriniz>: " option
         echo
         
         case "$option" in 
             1)  
-                echo -e $red "############## Instagram Takipci Hilesi ###################"
+                echo -e $red "~~~~~~~~~~~~~~~ Instagram Takipci Hilesi ~~~~~~~~~~~~~~~"
                 sleep 2
                 git clone https://github.com/thelinuxchoice/inshackle > /dev/null 2>&1
                 echo
@@ -92,14 +92,14 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 bash inshackle.sh
                 cd ..
                 echo ""
-                echo -e $red "########## Tamamlandi ############"
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandi ~~~~~~~~~~~~~~~"
                 echo
                 echo -e $green " 【!】 Ana Menuye Don 【!】 "
                 read -p "pess any key to return ..."
                 clear
                 ;;
             2)  
-                echo -e $red "############## Wifi Kick ###################"
+                echo -e $red "~~~~~~~~~~~~~~~ Wifi Kick ~~~~~~~~~~~~~~~"
                 sleep 2
                 git clone https://github.com/k4m4/kickthemout > /dev/null 2>&1
                 echo
@@ -118,14 +118,14 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 sudo python3 kickthemout.py
                 cd ..
                 echo ""
-                echo -e $red "########## Tamamlandi ############"
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandi ~~~~~~~~~~~~~~~"
                 echo
                 echo -e $green " 【!】 Ana Menuye Don 【!】 "
                 read -p "pess any key to return ..."
                 clear
                 ;;
             3)  
-                echo -e $red "############## Otomatik Ip Degistirme ###################"
+                echo -e $red "~~~~~~~~~~~~~~~ Otomatik Ip Degistirme ~~~~~~~~~~~~~~~"
                 sleep 2
                 git clone https://github.com/SusmithKrishnan/torghost > /dev/null 2>&1
                 echo
@@ -138,34 +138,38 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 torghost -s
                 cd ..
                 echo ""
-                echo -e $red "########## Tamamlandi ############"
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandi ~~~~~~~~~~~~~~~"
                 echo
                 echo -e $green " 【!】 Ana Menuye Don 【!】 "
                 read -p "pess any key to return ..."
                 clear
                 ;;
             4)  
-                echo -e $red "############## Sosyal Muhendislik ###################"
+                echo -e $red "~~~~~~~~~~~~~~~ Sosyal Muhendislik ~~~~~~~~~~~~~~~"
                 sleep 2
                 git clone https://github.com/DarkSecDevelopers/HiddenEye > /dev/null 2>&1
                 echo
                 echo -e $green "[ ✔ ] Sosyal Muhendislik Indirildi "
                 cd HiddenEye
 	        sudo pip3 install -r requirements.txt
+			clear
+			sudo apt-get install php
+			clear
+			sudo pip install php
                 clear
                 chmod +x HiddenEye.py
                 clear
                 sudo python3 HiddenEye.py
                 cd ..
                 echo ""
-                echo -e $red "########## Tamamlandi ############"
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandi ~~~~~~~~~~~~~~~"
                 echo
                 echo -e $green " 【!】 Ana Menuye Don 【!】 "
                 read -p "pess any key to return ..."
                 clear
                 ;;
             5)  
-                echo -e $red "############## ByChan Ddos ###################"
+                echo -e $red "~~~~~~~~~~~~~~~ ByChan Ddos ~~~~~~~~~~~~~~~"
                 sleep 2
                 git clone https://github.com/ByCh4n/Ddos-Attack-ByChan > /dev/null 2>&1
                 echo
@@ -176,14 +180,14 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 sudo python Ddos.py
                 cd ..
                 echo ""
-                echo -e "########## Tamamlandi ############"
+                echo -e "~~~~~~~~~~~~~~~ Tamamlandi ~~~~~~~~~~~~~~~"
                 echo
                 echo -e $green " 【!】 Ana Menuye Don 【!】 "
                 read -p "pess any key to return ..."
                 clear
                 ;;
             6)  
-                echo -e $red "############## Kisi Analizi ###################"
+                echo -e $red "~~~~~~~~~~~~~~~ Kisi Analizi ~~~~~~~~~~~~~~~"
                 sleep 2
                 git clone https://github.com/thelinuxchoice/userrecon > /dev/null 2>&1
                 echo
@@ -193,14 +197,14 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 clear
                 ./userrecon.sh
                 cd ..
-                echo -e $red "########## Tamamlandi ############"
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandi ~~~~~~~~~~~~~~~"
                 echo
                 echo -e $green " 【!】 Ana Menuye Don 【!】 "
                 read -p "pess any key to return ..."
                 clear
                 ;;
             7)  
-                echo -e $red "############## Konum Ogrenme ###################"
+                echo -e $red "~~~~~~~~~~~~~~~ Konum Ogrenme ~~~~~~~~~~~~~~~"
                 sleep 2
                 git clone https://github.com/thewhiteh4t/seeker > /dev/null 2>&1
                 echo
@@ -215,14 +219,14 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 clear
                 sudo python3 seeker.py -t manual -k xxx
                 cd ..
-                echo -e $red "########## Tamamlandi ############"
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandi ~~~~~~~~~~~~~~~"
                 echo ""
                 echo -e $green " 【!】 Ana Menuye Don 【!】 "
                 read -p "pess any key to return ..."
                 clear
                 ;;
             8)  
-                echo -e $red "############## Instagram BruteForce ###################"
+                echo -e $red "~~~~~~~~~~~~~~~ Instagram BruteForce ~~~~~~~~~~~~~~~"
                 sleep 2
                 git clone https://github.com/thelinuxchoice/instashell > /dev/null 2>&1
                 echo
@@ -238,14 +242,14 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 sudo ./instashell.sh
                 cd ..
                 echo ""
-                echo -e $red "########## Tamamlandi ############"
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandi ~~~~~~~~~~~~~~~"
                 echo
                 echo -e $green " 【!】 Ana Menuye Don 【!】 "
                 read -p "pess any key to return ..."
                 clear
                 ;;
 	    9)  
-                echo -e $red "############## Facebook BruteForce ###################"
+                echo -e $red "~~~~~~~~~~~~~~~ Facebook BruteForce ~~~~~~~~~~~~~~~"
                 sleep 2
                 git clone https://github.com/AngelSecurityTeam/BluForce-FB > /dev/null 2>&1
                 echo
@@ -261,14 +265,14 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 sudo python2 bluforcefb.py
                 cd ..
                 echo ""
-                echo -e $red "########## Tamamlandi ############"
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandi ~~~~~~~~~~~~~~~"
                 echo
                 echo -e $green " 【!】 Ana Menuye Don 【!】 "
                 read -p "pess any key to return ..."
                 clear
                 ;;
 	   10)  
-                echo -e $red "############## WordList Olusturma ###################"
+                echo -e $red "~~~~~~~~~~~~~~~ WordList Olusturma ~~~~~~~~~~~~~~~"
                 sleep 2
                 git clone https://github.com/Mebus/cupp > /dev/null 2>&1
                 echo
@@ -281,14 +285,14 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 sudo python3 cupp.py -i
                 cd ..
                 echo ""
-                echo -e $red "########## Tamamlandi ############"
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandi ~~~~~~~~~~~~~~~"
                 echo
                 echo -e $green " 【!】 Ana Menuye Don 【!】 "
                 read -p "pess any key to return ..."
                 clear
                 ;;
 	   11)  
-                echo -e $red "############## Whatsapp Spam Bomber ###################"
+                echo -e $red "~~~~~~~~~~~~~~~ Whatsapp Spam Bomber ~~~~~~~~~~~~~~~"
                 sleep 2
                 git clone https://github.com/sandiwijayani1/SpamWa > /dev/null 2>&1
                 echo
@@ -302,14 +306,14 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 sudo python3 spam.py
                 cd ..
                 echo ""
-                echo -e $red "########## Tamamlandi ############"
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandi ~~~~~~~~~~~~~~~"
                 echo
                 echo -e $green " 【!】 Ana Menuye Don 【!】 "
                 read -p "pess any key to return ..."
                 clear
                 ;;
 	   12)  
-                echo -e $red "############## Rar-Zip Sifre Kirici ###################"
+                echo -e $red "~~~~~~~~~~~~~~~ Rar-Zip Sifre Kirici ~~~~~~~~~~~~~~~"
                 sleep 2
                 git clone https://github.com/ByCh4n/Rar-Zip-Crack > /dev/null 2>&1
                 echo
@@ -322,7 +326,49 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 sudo python3 rar_zip_cracker.py
                 cd ..
                 echo ""
-                echo -e $red "########## Tamamlandi ############"
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandi ~~~~~~~~~~~~~~~"
+                echo
+                echo -e $green " 【!】 Ana Menuye Don 【!】 "
+                read -p "pess any key to return ..."
+                clear
+                ;;
+		x)  
+                echo -e $red "~~~~~~~~~~~~~~~ Otomatik Güncelleyici Başlatıldı ~~~~~~~~~~~~~~~"
+                sleep 2
+                sudo apt-get update
+				clear
+				sudo apt-get upgrade
+				clear
+				sudo apt-get install python
+				clear
+				sudo apt-get install python2
+				clear
+				sudo apt-get install python3
+				clear
+				sudo apt-get install python-pip
+				clear
+				sudo apt-get install python2-pip
+				clear
+				sudo apt-get install python3-pip
+				clear
+				sudo pip install mechanize
+				clear
+				sudo pip2 install mechanize
+				clear
+				sudo pip install php
+				clear
+				sudo pip install tor
+				clear
+				sudo apt-get install tor
+				clear
+				sudo pip3 install requests
+				clear
+				sudo apt-get install php
+				clear
+				sudo apt-get install nmap
+				clear
+                echo ""
+                echo -e $red "~~~~~~~~~~~~~~~ Otomatik Güncelleyici Tamamlandı ~~~~~~~~~~~~~~~"
                 echo
                 echo -e $green " 【!】 Ana Menuye Don 【!】 "
                 read -p "pess any key to return ..."
