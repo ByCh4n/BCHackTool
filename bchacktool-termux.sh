@@ -54,6 +54,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~
         echo "[3] ✔ WordList Oluşturma"
         echo "[4] ✔ Whatsapp Spam Bomber"
         echo "[5] ✔ Kişi Analizi"
+		echo "[6] ✔ Numaradan Bilgi Öğrenme"
         echo "[q] ✔ Çıkış"
         echo
         read -p "Numara Giriniz>: " option
@@ -66,6 +67,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~
                 sleep 2
                 pkg update
                 pkg upgrade
+				pkg install wget
                 pkg install python
                 pkg install python2
                 pkg install python3
@@ -73,6 +75,9 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~
                 pkg install nano
                 pip install openssl
                 pkg install openssl
+				pkg install openssh
+				termux-setup-storage
+				pip install requests
                 pkg install tor
                 pkg install curl
                 pip install curl
@@ -147,6 +152,22 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~
                 bash userrecon.sh
                 echo ""
                 echo -e $red "~~~~~~~~~~~ Kişi Analizi Bitti ~~~~~~~~~~~"
+                echo
+                echo -e $green " 【!】 Ana Menuye Don 【!】 "
+                read -p "pess any key to return ..."
+                clear
+                ;;
+			6)
+                echo -e $red "~~~~~~~~~~~ Numaradan Bilgi Öğrenme ~~~~~~~~~~~~ "
+                echo
+                sleep 2
+                git clone https://github.com/Wes974/PhoneInfoga > /dev/null 2>&1
+                cd PhoneInfoga
+                clear
+                pip install -r requirements.txt
+				clear
+                echo ""
+                echo -e $red "~~~~~~~~~~~ Numaradan Bilgi Öğrenme Bitti ~~~~~~~~~~~"
                 echo
                 echo -e $green " 【!】 Ana Menuye Don 【!】 "
                 read -p "pess any key to return ..."
