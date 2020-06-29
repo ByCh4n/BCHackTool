@@ -83,7 +83,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
             1)  
                 echo -e $red "~~~~~~~~~~~~~~~ Instagram Takipçi Hilesi ~~~~~~~~~~~~~~~"
                 sleep 2
-                git clone https://github.com/thelinuxchoice/inshackle > /dev/null 2>&1
+                git clone https://github.com/Sanju8943/inshackle > /dev/null 2>&1
                 echo
                 echo  -e $green "[ ✔ ] Instagram Takipçi Hilesi Indirildi " 
                 cd inshackle
