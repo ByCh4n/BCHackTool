@@ -228,7 +228,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
             8)  
                 echo -e $red "~~~~~~~~~~~~~~~ Instagram BruteForce ~~~~~~~~~~~~~~~"
                 sleep 2
-                git clone https://github.com/thelinuxchoice/instashell > /dev/null 2>&1
+                git clone https://github.com/OffXec/instashell > /dev/null 2>&1
                 echo
                 echo -e $green "[ ✔ ] Instagram BruteForce Indirildi "
                 echo -e $yellow "" 
