@@ -189,7 +189,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
             6)  
                 echo -e $red "~~~~~~~~~~~~~~~ Kişi Analizi ~~~~~~~~~~~~~~~"
                 sleep 2
-                git clone https://github.com/thelinuxchoice/userrecon > /dev/null 2>&1
+                git clone https://github.com/issamelferkh/userrecon > /dev/null 2>&1
                 echo
                 echo -e $green "[ ✔ ] Kişi Analizi Indirildi "
                 cd userrecon
