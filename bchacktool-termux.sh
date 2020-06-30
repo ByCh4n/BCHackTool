@@ -55,6 +55,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~
         echo "[4] ✔ Whatsapp Spam Bomber"
         echo "[5] ✔ Kişi Analizi"
 		echo "[6] ✔ Numaradan Bilgi Öğrenme"
+		echo "[7] ✔ Ip Tracer"
         echo "[q] ✔ Çıkış"
         echo
         read -p "Numara Giriniz>: " option
@@ -146,7 +147,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~
                 echo -e $red "~~~~~~~~~~~ Kişi Analizi ~~~~~~~~~~~~ "
                 echo
                 sleep 2
-                git clone https://github.com/thelinuxchoice/userrecon > /dev/null 2>&1
+                git clone https://github.com/issamelferkh/userrecon > /dev/null 2>&1
                 cd userrecon
                 clear
                 bash userrecon.sh
@@ -168,6 +169,25 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~
 				clear
                 echo ""
                 echo -e $red "~~~~~~~~~~~ Numaradan Bilgi Öğrenme Bitti ~~~~~~~~~~~"
+                echo
+                echo -e $green " 【!】 Ana Menuye Don 【!】 "
+                read -p "pess any key to return ..."
+                clear
+                ;;
+			7)
+                echo -e $red "~~~~~~~~~~~ Ip Tracer ~~~~~~~~~~~~ "
+                echo
+                sleep 2
+                git clone https://github.com/rajkumardusad/IP-Tracer > /dev/null 2>&1
+                cd IP-Tracer
+                clear
+                chmod +x install
+				clear
+				./install
+				clear
+				ip-tracer start
+                echo ""
+                echo -e $red "~~~~~~~~~~~ Ip Tracer Bitti ~~~~~~~~~~~"
                 echo
                 echo -e $green " 【!】 Ana Menuye Don 【!】 "
                 read -p "pess any key to return ..."

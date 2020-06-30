@@ -74,6 +74,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
         echo "[7] ✔ Konum Öğrenme                    [8] ✔ Instagram BruteForce"
         echo "[9] ✔ Facebook BruteForce              [10] ✔ WordList Oluşturma"
         echo "[11] ✔ Whatsapp Spam Bomber            [12] ✔ Rar-Zip Şifre Kırıcı"
+		echo "[13] ✔ Ip Tracer"
         echo "[q] ✔ Çıkış                             [x] ✔ Otomatik Güncelleyici"
         echo
         read -p "Numara Giriniz>: " option
@@ -324,6 +325,26 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 sudo apt-get install python3
                 clear
                 sudo python3 rar_zip_cracker.py
+                cd ..
+                echo ""
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandı ~~~~~~~~~~~~~~~"
+                echo
+                echo -e $green " 【!】 Ana Menüye Dön 【!】 "
+                read -p "pess any key to return ..."
+                clear
+                ;;
+		13)  
+                echo -e $red "~~~~~~~~~~~~~~~ Ip Tracer ~~~~~~~~~~~~~~~"
+                sleep 2
+                git clone https://github.com/rajkumardusad/IP-Tracer > /dev/null 2>&1
+                echo
+                echo  -e $green "[ ✔ ] Ip Tracer Indirildi " 
+                cd IP-Tracer
+                chmod +x install
+                clear
+                sudo ./install
+                clear
+                ip-tracer start
                 cd ..
                 echo ""
                 echo -e $red "~~~~~~~~~~~~~~~ Tamamlandı ~~~~~~~~~~~~~~~"
