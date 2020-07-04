@@ -56,6 +56,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~
         echo "[5] ✔ Kişi Analizi"
 		echo "[6] ✔ Numaradan Bilgi Öğrenme"
 		echo "[7] ✔ Ip Tracer"
+		echo "[8] ✔ Facebook Email-Numara Öğrenme"
         echo "[q] ✔ Çıkış"
         echo
         read -p "Numara Giriniz>: " option
@@ -188,6 +189,23 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~
 				ip-tracer start
                 echo ""
                 echo -e $red "~~~~~~~~~~~ Ip Tracer Bitti ~~~~~~~~~~~"
+                echo
+                echo -e $green " 【!】 Ana Menuye Don 【!】 "
+                read -p "pess any key to return ..."
+                clear
+                ;;
+			8)
+                echo -e $red "~~~~~~~~~~~ Facebook Email-Numara Öğrenme ~~~~~~~~~~~~ "
+                echo
+                sleep 2
+                git clone https://github.com/CiKu370/OSIF > /dev/null 2>&1
+                cd OSIF
+                clear
+                pip2 install -r requirements.txt
+				clear
+				python2 osif.py
+                echo ""
+                echo -e $red "~~~~~~~~~~~ Facebook Email-Numara Öğrenme Bitti ~~~~~~~~~~~"
                 echo
                 echo -e $green " 【!】 Ana Menuye Don 【!】 "
                 read -p "pess any key to return ..."

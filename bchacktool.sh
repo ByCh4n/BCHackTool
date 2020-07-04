@@ -74,7 +74,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
         echo "[7] ✔ Konum Öğrenme                    [8] ✔ Instagram BruteForce"
         echo "[9] ✔ Facebook BruteForce              [10] ✔ WordList Oluşturma"
         echo "[11] ✔ Whatsapp Spam Bomber            [12] ✔ Rar-Zip Şifre Kırıcı"
-		echo "[13] ✔ Ip Tracer"
+		echo "[13] ✔ Ip Tracer                       [14] ✔ Facebook Email-Numara Öğrenme"
         echo "[q] ✔ Çıkış                             [x] ✔ Otomatik Güncelleyici"
         echo
         read -p "Numara Giriniz>: " option
@@ -345,6 +345,24 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 sudo ./install
                 clear
                 ip-tracer start
+                cd ..
+                echo ""
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandı ~~~~~~~~~~~~~~~"
+                echo
+                echo -e $green " 【!】 Ana Menüye Dön 【!】 "
+                read -p "pess any key to return ..."
+                clear
+                ;;
+		14)  
+                echo -e $red "~~~~~~~~~~~~~~~ Facebook Email-Numara Öğrenme ~~~~~~~~~~~~~~~"
+                sleep 2
+                git clone https://github.com/CiKu370/OSIF > /dev/null 2>&1
+                echo
+                echo  -e $green "[ ✔ ] Facebook Email-Numara Öğrenme Indirildi " 
+                cd OSIF
+                pip2 install -r requirements.txt
+                clear
+                python2 osif.py 
                 cd ..
                 echo ""
                 echo -e $red "~~~~~~~~~~~~~~~ Tamamlandı ~~~~~~~~~~~~~~~"
