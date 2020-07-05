@@ -39,6 +39,10 @@ Termux - Installation(Kurulum):
 
 --------------------------------------------------------------------------
 
+Donate : https://www.bynogame.com/destekle/ByChan
+
+--------------------------------------------------------------------------
+
 Dilerim Ki Sizler İçin Yararlı Olmuştur. :)
 
 Kali Linux ✔
