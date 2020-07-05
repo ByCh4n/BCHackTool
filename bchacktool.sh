@@ -75,6 +75,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
         echo "[9] ✔ Facebook BruteForce              [10] ✔ WordList Oluşturma"
         echo "[11] ✔ Whatsapp Spam Bomber            [12] ✔ Rar-Zip Şifre Kırıcı"
 		echo "[13] ✔ Ip Tracer                       [14] ✔ Facebook Email-Numara Öğrenme"
+		echo "[15] ✔ Instagram-Facebook-Twitter BruteForce(Güncel)"
         echo "[q] ✔ Çıkış                             [x] ✔ Otomatik Güncelleyici"
         echo
         read -p "Numara Giriniz>: " option
@@ -363,6 +364,24 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 pip2 install -r requirements.txt
                 clear
                 python2 osif.py 
+                cd ..
+                echo ""
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandı ~~~~~~~~~~~~~~~"
+                echo
+                echo -e $green " 【!】 Ana Menüye Dön 【!】 "
+                read -p "pess any key to return ..."
+                clear
+                ;;
+		15)  
+                echo -e $red "~~~~~~~~~~~~~~~ Instagram-Facebook-Twitter BruteForce ~~~~~~~~~~~~~~~"
+                sleep 2
+                git clone https://github.com/AzizKpln/Bruter19 > /dev/null 2>&1
+                echo
+                echo  -e $green "[ ✔ ] Instagram-Facebook-Twitter BruteForce Indirildi " 
+                cd Bruter19
+                sudo ./setup.sh
+                clear
+                sudo python3 bruter19.py
                 cd ..
                 echo ""
                 echo -e $red "~~~~~~~~~~~~~~~ Tamamlandı ~~~~~~~~~~~~~~~"
