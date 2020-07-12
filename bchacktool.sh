@@ -75,7 +75,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
         echo "[9] ✔ Facebook BruteForce              [10] ✔ WordList Oluşturma"
         echo "[11] ✔ Whatsapp Spam Bomber            [12] ✔ Rar-Zip Şifre Kırıcı"
 		echo "[13] ✔ Ip Tracer                       [14] ✔ Facebook Email-Numara Öğrenme"
-		echo "[15] ✔ Instagram-Facebook-Twitter BruteForce(Güncel)"
+		echo "[15] ✔ Instagram-Facebook-Twitter BF   [16] ✔ CCTV Cam Hack"
         echo "[q] ✔ Çıkış                             [x] ✔ Otomatik Güncelleyici"
         echo
         read -p "Numara Giriniz>: " option
@@ -390,6 +390,26 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 read -p "pess any key to return ..."
                 clear
                 ;;
+		16)  
+                echo -e $red "~~~~~~~~~~~~~~~ CCTV Cam Hack ~~~~~~~~~~~~~~~"
+                sleep 2
+                git clone https://github.com/AngelSecurityTeam/Cam-Hackers > /dev/null 2>&1
+                echo
+                echo  -e $green "[ ✔ ] CCTV Cam Hack Indirildi " 
+                cd Cam-Hackers
+                sudo apt-get install python3-pip
+                clear
+                sudo pip3 install requests
+				clear
+				sudo python3 cam-hackers.py
+                cd ..
+                echo ""
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandı ~~~~~~~~~~~~~~~"
+                echo
+                echo -e $green " 【!】 Ana Menüye Dön 【!】 "
+                read -p "pess any key to return ..."
+                clear
+                ;;
 		x)  
                 echo -e $red "~~~~~~~~~~~~~~~ Otomatik Güncelleyici Başlatıldı ~~~~~~~~~~~~~~~"
                 sleep 2
@@ -425,6 +445,13 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
 				clear
 				sudo apt-get install nmap
 				clear
+				sudo apt-get install torghost
+				clear
+				sudo apt-get install tor
+				clear
+				sudo pip3 install clint
+				clear
+				sudo pip3 install colorama
                 echo ""
                 echo -e $red "~~~~~~~~~~~~~~~ Otomatik Güncelleyici Tamamlandı ~~~~~~~~~~~~~~~"
                 echo
