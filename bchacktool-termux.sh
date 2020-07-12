@@ -57,6 +57,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~
 		echo "[6] ✔ Numaradan Bilgi Öğrenme"
 		echo "[7] ✔ Ip Tracer"
 		echo "[8] ✔ Facebook Email-Numara Öğrenme"
+		echo "[9] ✔ CCTV Cam Hack"
         echo "[q] ✔ Çıkış"
         echo
         read -p "Numara Giriniz>: " option
@@ -204,6 +205,27 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~
                 pip2 install -r requirements.txt
 				clear
 				python2 osif.py
+                echo ""
+                echo -e $red "~~~~~~~~~~~ Facebook Email-Numara Öğrenme Bitti ~~~~~~~~~~~"
+                echo
+                echo -e $green " 【!】 Ana Menuye Don 【!】 "
+                read -p "pess any key to return ..."
+                clear
+                ;;
+			9)
+                echo -e $red "~~~~~~~~~~~ CCTV Cam Hack ~~~~~~~~~~~~ "
+                echo
+                sleep 2
+                git clone https://github.com/AngelSecurityTeam/Cam-Hackers > /dev/null 2>&1
+                cd Cam-Hackers
+                clear
+                pkg install python-pip
+				pkg install python3-pip
+				clear
+				pip install requests
+				pip3 install requests
+				clear
+				python3 cam-hackers.py
                 echo ""
                 echo -e $red "~~~~~~~~~~~ Facebook Email-Numara Öğrenme Bitti ~~~~~~~~~~~"
                 echo
