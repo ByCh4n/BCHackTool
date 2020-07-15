@@ -379,6 +379,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 echo
                 echo  -e $green "[ ✔ ] Instagram-Facebook-Twitter BruteForce Indirildi " 
                 cd Bruter19
+				sudo apt-get install python-pip
                 sudo ./setup.sh
                 clear
                 sudo python3 bruter19.py
