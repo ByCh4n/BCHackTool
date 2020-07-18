@@ -76,6 +76,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
         echo "[11] ✔ Whatsapp Spam Bomber            [12] ✔ Rar-Zip Şifre Kırıcı"
 		echo "[13] ✔ Ip Tracer                       [14] ✔ Facebook Email-Numara Öğrenme"
 		echo "[15] ✔ Instagram-Facebook-Twitter BF   [16] ✔ CCTV Cam Hack"
+		echo "[17] ✔ BackDoor Trojan"
         echo "[q] ✔ Çıkış                             [x] ✔ Otomatik Güncelleyici"
         echo
         read -p "Numara Giriniz>: " option
@@ -403,6 +404,28 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 sudo pip3 install requests
 				clear
 				sudo python3 cam-hackers.py
+                cd ..
+                echo ""
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandı ~~~~~~~~~~~~~~~"
+                echo
+                echo -e $green " 【!】 Ana Menüye Dön 【!】 "
+                read -p "pess any key to return ..."
+                clear
+                ;;
+		17)  
+                echo -e $red "~~~~~~~~~~~~~~~ BackDoor Trojan ~~~~~~~~~~~~~~~"
+                sleep 2
+                git clone https://github.com/Screetsec/TheFatRat > /dev/null 2>&1
+                echo
+                echo  -e $green "[ ✔ ] BackDoor Trojan Indirildi " 
+                cd TheFatRat
+                sudo apt-get install default-jdk
+                clear
+                sudo chmod +x setup.sh
+				clear
+				./setup.sh
+				clear
+				./fatrat
                 cd ..
                 echo ""
                 echo -e $red "~~~~~~~~~~~~~~~ Tamamlandı ~~~~~~~~~~~~~~~"
