@@ -169,6 +169,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~
                 clear
                 pip install -r requirements.txt
 				clear
+                echo "Kullanımı PhoneInfoga Dizinine Girip - python phoneinfoga.py -n +90*** - Şeklindedir."
                 echo ""
                 echo -e $red "~~~~~~~~~~~ Numaradan Bilgi Öğrenme Bitti ~~~~~~~~~~~"
                 echo

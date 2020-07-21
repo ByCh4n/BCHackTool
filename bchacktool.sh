@@ -76,7 +76,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
         echo "[11] ✔ Whatsapp Spam Bomber            [12] ✔ Rar-Zip Şifre Kırıcı"
 		echo "[13] ✔ Ip Tracer                       [14] ✔ Facebook Email-Numara Öğrenme"
 		echo "[15] ✔ Instagram-Facebook-Twitter BF   [16] ✔ CCTV Cam Hack"
-		echo "[17] ✔ BackDoor Trojan"
+		echo "[17] ✔ BackDoor Trojan                 [18] ✔ Numaradan Bilgi Öğrenme"
         echo "[q] ✔ Çıkış                             [x] ✔ Otomatik Güncelleyici"
         echo
         read -p "Numara Giriniz>: " option
@@ -154,11 +154,11 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 echo
                 echo -e $green "[ ✔ ] Sosyal Muhendislik Indirildi "
                 cd HiddenEye
-	        sudo pip3 install -r requirements.txt
-			clear
-			sudo apt-get install php
-			clear
-			sudo pip install php
+	            sudo pip3 install -r requirements.txt
+			    clear
+			    sudo apt-get install php
+			    clear
+			    sudo pip install php
                 clear
                 chmod +x HiddenEye.py
                 clear
@@ -426,6 +426,27 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
 				./setup.sh
 				clear
 				./fatrat
+                cd ..
+                echo ""
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandı ~~~~~~~~~~~~~~~"
+                echo
+                echo -e $green " 【!】 Ana Menüye Dön 【!】 "
+                read -p "pess any key to return ..."
+                clear
+                ;;
+            18)  
+                echo -e $red "~~~~~~~~~~~~~~~ Numaradan Bilgi Öğrenme ~~~~~~~~~~~~~~~"
+                sleep 2
+                git clone https://github.com/Wes974/PhoneInfoga > /dev/null 2>&1
+                echo
+                echo  -e $green "[ ✔ ] Numaradan Bilgi Öğrenme Indirildi " 
+                cd PhoneInfoga
+                sudo apt-get install python
+                sudo apt-get install python-pip
+                clear
+                pip install -r requirements.txt
+				clear
+                echo "Kullanımı PhoneInfoga Dizinine Girip - python phoneinfoga.py -n +90*** - Şeklindedir."
                 cd ..
                 echo ""
                 echo -e $red "~~~~~~~~~~~~~~~ Tamamlandı ~~~~~~~~~~~~~~~"
