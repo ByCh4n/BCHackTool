@@ -68,6 +68,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~
                 echo -e $red "~~~~~~~~~~~ Otomatik Güncelleyici ~~~~~~~~~~~~ "
                 echo
                 sleep 2
+                git pull
                 pkg update
                 pkg upgrade
 				pkg install wget

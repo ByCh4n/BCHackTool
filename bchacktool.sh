@@ -458,6 +458,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
 		x)  
                 echo -e $red "~~~~~~~~~~~~~~~ Otomatik Güncelleyici Başlatıldı ~~~~~~~~~~~~~~~"
                 sleep 2
+                sudo git pull
                 sudo apt-get update
 				clear
 				sudo apt-get upgrade
