@@ -11,7 +11,7 @@ Kullanımı Çok Basit Shell Üzerine Yazılmış Bir Programdır Ve Siz İşlem
 
 Hatalar Giderildi. ✔
 
-Programı İlk Çalıştırdığınız Zaman Öncelikli Olarak [x] Otomatik Güncelleştiriciyi Çalıştırınız. ✔
+Programı İlk Çalıştırdığınız Zaman Öncelikli Olarak [19] Otomatik Güncelleştiriciyi Çalıştırınız. ✔
 
 Her Yeni Videoda Program Güncellenicektir. 🆕
 
