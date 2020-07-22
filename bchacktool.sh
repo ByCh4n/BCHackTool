@@ -472,7 +472,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 clear
                 ;;
 		x)  
-                echo -e $red "~~~~~~~~~~~~~~~ BCHackTool Güncelle ~~~~~~~~~~~~~~~"
+                echo -e $red "~~~~~~~~~~~~~~~ BCHackTool Güncelleniyor ~~~~~~~~~~~~~~~"
                 sleep 2
                 {
                 git pull

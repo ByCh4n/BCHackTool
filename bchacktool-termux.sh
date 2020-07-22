@@ -49,7 +49,7 @@ echo -e $cyan"    Instagram           $white":" $red huseyinaltns"
 echo -e $cyan ""
 echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~~~    ";
         echo
-        echo "[1] ✔ Otomatik Güncelleyici"
+        echo "[1] ✔ BCHackTool-Termux Güncelle"
         echo "[2] ✔ Facebook Bruteforce"
         echo "[3] ✔ WordList Oluşturma"
         echo "[4] ✔ Whatsapp Spam Bomber"
@@ -66,7 +66,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~
 
         case "$option" in
             1)
-                echo -e $red "~~~~~~~~~~~ BCHackTool-Termux Güncelle ~~~~~~~~~~~~ "
+                echo -e $red "~~~~~~~~~~~ BCHackTool-Termux Güncelleniyor ~~~~~~~~~~~~ "
                 echo
                 sleep 2
                 {
