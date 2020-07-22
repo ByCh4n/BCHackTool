@@ -49,7 +49,7 @@ Kali Linux ✔
 
 Termux ✔
 
-![Ekran Alıntısı](https://user-images.githubusercontent.com/67187998/85402253-07c61300-b564-11ea-930d-99610b9ff983.PNG)
+![123](https://user-images.githubusercontent.com/67187998/88212477-015cb100-cc60-11ea-8d09-99670c7ebaf0.PNG)
 
-![4](https://user-images.githubusercontent.com/67187998/85717458-370c8980-b6f6-11ea-957c-25436562c0e3.PNG)
+![321](https://user-images.githubusercontent.com/67187998/88212480-028dde00-cc60-11ea-8fe8-5267a27a76e1.PNG)
 
