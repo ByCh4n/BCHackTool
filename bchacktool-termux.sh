@@ -58,6 +58,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~
 		echo "[7] ✔ Ip Tracer"
 		echo "[8] ✔ Facebook Email-Numara Öğrenme"
 		echo "[9] ✔ CCTV Cam Hack"
+        echo "[10] ✔ Gerekli Program Yükleyici"
         echo "[q] ✔ Çıkış"
         echo
         read -p "Numara Giriniz>: " option
@@ -65,35 +66,14 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~
 
         case "$option" in
             1)
-                echo -e $red "~~~~~~~~~~~ Otomatik Güncelleyici ~~~~~~~~~~~~ "
+                echo -e $red "~~~~~~~~~~~ BCHackTool-Termux Güncelle ~~~~~~~~~~~~ "
                 echo
                 sleep 2
+                {
                 git pull
-                pkg update
-                pkg upgrade
-				pkg install wget
-                pkg install python
-                pkg install python2
-                pkg install python3
-                pkg install git
-                pkg install nano
-                pip install openssl
-                pkg install openssl
-				pkg install openssh
-				termux-setup-storage
-				pip install requests
-                pkg install tor
-                pkg install curl
-                pip install curl
-                pip install tor
-                pip2 install mechanize
-                apt update
-                apt upgrade
-                apt-update && apt upgrade -y
-                pkg install git python php curl openssh grep
-                pip install stem
+                } > /dev/null
                 echo ""
-                echo -e $red "~~~~~~~~~~~ Otomatik Güncelleyici Bitti ~~~~~~~~~~~"
+                echo -e $red "~~~~~~~~~~~ BCHackTool-Termux Güncellendi ~~~~~~~~~~~"
                 echo
                 echo -e $green " 【!】 Ana Menuye Don 【!】 "
                 read -p "pess any key to return ..."
@@ -230,6 +210,20 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~
 				python3 cam-hackers.py
                 echo ""
                 echo -e $red "~~~~~~~~~~~ Facebook Email-Numara Öğrenme Bitti ~~~~~~~~~~~"
+                echo
+                echo -e $green " 【!】 Ana Menuye Don 【!】 "
+                read -p "pess any key to return ..."
+                clear
+                ;;
+            10)
+                echo -e $red "~~~~~~~~~~~ Gerekli Program Yükleyici ~~~~~~~~~~~~ "
+                echo
+                sleep 2
+                git clone https://github.com/ByCh4n/RequiredChan > /dev/null 2>&1
+                cd RequiredChan
+                bash reqchan
+                echo ""
+                echo -e $red "~~~~~~~~~~~ Gerekli Program Yükleyici Bitti ~~~~~~~~~~~"
                 echo
                 echo -e $green " 【!】 Ana Menuye Don 【!】 "
                 read -p "pess any key to return ..."

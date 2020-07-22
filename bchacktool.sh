@@ -77,7 +77,8 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
 		echo "[13] ✔ Ip Tracer                       [14] ✔ Facebook Email-Numara Öğrenme"
 		echo "[15] ✔ Instagram-Facebook-Twitter BF   [16] ✔ CCTV Cam Hack"
 		echo "[17] ✔ BackDoor Trojan                 [18] ✔ Numaradan Bilgi Öğrenme"
-        echo "[q] ✔ Çıkış                             [x] ✔ Otomatik Güncelleyici"
+        echo "[19] ✔ Gerekli Program Yükleyici"
+        echo "[q] ✔ Çıkış                             [x] ✔ BCHackTool Güncelle"
         echo
         read -p "Numara Giriniz>: " option
         echo
@@ -455,51 +456,29 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 read -p "pess any key to return ..."
                 clear
                 ;;
-		x)  
-                echo -e $red "~~~~~~~~~~~~~~~ Otomatik Güncelleyici Başlatıldı ~~~~~~~~~~~~~~~"
+        19)  
+                echo -e $red "~~~~~~~~~~~~~~~ Gerekli Program Yükleyici ~~~~~~~~~~~~~~~"
                 sleep 2
-                sudo git pull
-                sudo apt-get update
-				clear
-				sudo apt-get upgrade
-				clear
-				sudo apt-get install python
-				clear
-				sudo apt-get install python2
-				clear
-				sudo apt-get install python3
-				clear
-				sudo apt-get install python-pip
-				clear
-				sudo apt-get install python2-pip
-				clear
-				sudo apt-get install python3-pip
-				clear
-				sudo pip install mechanize
-				clear
-				sudo pip2 install mechanize
-				clear
-				sudo pip install php
-				clear
-				sudo pip install tor
-				clear
-				sudo apt-get install tor
-				clear
-				sudo pip3 install requests
-				clear
-				sudo apt-get install php
-				clear
-				sudo apt-get install nmap
-				clear
-				sudo apt-get install torghost
-				clear
-				sudo apt-get install tor
-				clear
-				sudo pip3 install clint
-				clear
-				sudo pip3 install colorama
+                git clone https://github.com/ByCh4n/RequiredChan > /dev/null 2>&1
+                echo
+                echo  -e $green "[ ✔ ] Gerekli Program Yükleyici Indirildi " 
+                cd RequiredChan
+                sudo bash reqchan
                 echo ""
-                echo -e $red "~~~~~~~~~~~~~~~ Otomatik Güncelleyici Tamamlandı ~~~~~~~~~~~~~~~"
+                echo -e $red "~~~~~~~~~~~~~~~ Tamamlandı ~~~~~~~~~~~~~~~"
+                echo
+                echo -e $green " 【!】 Ana Menüye Dön 【!】 "
+                read -p "pess any key to return ..."
+                clear
+                ;;
+		x)  
+                echo -e $red "~~~~~~~~~~~~~~~ BCHackTool Güncelle ~~~~~~~~~~~~~~~"
+                sleep 2
+                {
+                sudo git pull
+                } > /dev/null
+                echo ""
+                echo -e $red "~~~~~~~~~~~~~~~ BCHackTool Güncellendi ~~~~~~~~~~~~~~~"
                 echo
                 echo -e $green " 【!】 Ana Menüye Dön 【!】 "
                 read -p "pess any key to return ..."
