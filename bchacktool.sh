@@ -475,8 +475,8 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
                 echo -e $red "~~~~~~~~~~~~~~~ BCHackTool Güncelle ~~~~~~~~~~~~~~~"
                 sleep 2
                 {
-                sudo git pull
-                } > /dev/null
+                git pull
+                } &> /dev/null
                 echo ""
                 echo -e $red "~~~~~~~~~~~~~~~ BCHackTool Güncellendi ~~~~~~~~~~~~~~~"
                 echo

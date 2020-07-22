@@ -71,7 +71,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~
                 sleep 2
                 {
                 git pull
-                } > /dev/null
+                } &> /dev/null
                 echo ""
                 echo -e $red "~~~~~~~~~~~ BCHackTool-Termux Güncellendi ~~~~~~~~~~~"
                 echo
