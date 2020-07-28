@@ -12,7 +12,7 @@ blue='\e[1;34m'
 echo ""
 sleep 2
 # Root Kontrol
-[[ `id -u` -eq 0 ]] > /dev/null 2>&1 || { echo  $red "Programı Çalıştırmak İçin Root Olarak Giriş Yapınız Yada Komutun Başına Sudo Koyunuz."; echo ; exit 1; }
+[[ `id -u` -eq 0 ]] > /dev/null 2>&1 || { echo -e $red "Programı Çalıştırmak İçin Root Olarak Giriş Yapınız Yada Komutun Başına Sudo Koyunuz."; echo ; exit 1; }
 
 # detect ctrl+c exiting
 trap ctrl_c INT
