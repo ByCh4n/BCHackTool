@@ -23,7 +23,7 @@ EN
 --
 This Program Was Prepared By ByChan.
 
-YYoutube ▶️ : https://www.youtube.com/ByChan
+Youtube ▶️ : https://www.youtube.com/ByChan
 
 Instagram 📸 : huseyinaltns
 
