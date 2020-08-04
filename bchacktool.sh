@@ -319,7 +319,7 @@ echo -e $okegreen"   ~~~~~~~~~~~~~~~~~~~~~ Tool Listesi ~~~~~~~~~~~~~~~~~~~~~~~~
 	   12)  
                 echo -e $red "~~~~~~~~~~~~~~~ Rar-Zip Şifre Kırıcı ~~~~~~~~~~~~~~~"
                 sleep 2
-                git clone https://github.com/ByCh4n/Rar-Zip-Crack > /dev/null 2>&1
+                git clone https://github.com/ByCh4n/RZP > /dev/null 2>&1
                 echo
                 echo  -e $green "[ ✔ ] Rar-Zip Şifre Kırıcı Indirildi " 
                 cd Rar-Zip-Crack
