@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+cat banner/banner.txt
+echo ""
+echo ""
+echo "Program Güncelleniyor...."
+
+sudo git pull &> /dev/null
+
+echo "Program Güncellendi..."
