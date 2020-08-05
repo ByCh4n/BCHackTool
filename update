@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cat ./banners/banner
+echo -n "Script Güncelleniyor.."
+git pull &> /dev/null
+echo "[OK]"
