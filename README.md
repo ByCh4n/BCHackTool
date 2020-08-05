@@ -49,7 +49,7 @@ Kali Linux - Installation(Kurulum):
 
 💲 chmod +x bchacktool.sh
 
-💲 sudo bash bchacktool.sh
+💲 ./bchacktool.sh
 
 Termux - Installation(Kurulum):
 
@@ -57,7 +57,9 @@ Termux - Installation(Kurulum):
 
 💲 cd BCHackTool
 
-💲 bash bchacktool-termux.sh
+💲 chmod +x bchacktool-termux.sh
+
+💲 ./bchacktool-termux.sh
 
 --------------------------------------------------------------------------
 
