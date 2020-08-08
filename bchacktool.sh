@@ -23,15 +23,15 @@
 if [[ $USER = "root" ]] ; then
     echo "ok" &> /dev/null
 else
-    echo -e "$red sudo ./bchacktool.sh${tp} ile deneyiniz"
+    echo -e "$red sudo ./bchacktool.sh${tp} İle Deneyiniz.!"
     exit 1
 fi
 
 # help
 if [[ $1 =~ ^(-h|--help|-y|--yardım) ]] ; then
     echo ""
-    echo -e "Default kullanım için dosyayı ${lightgreen}./bchacktool-lite.sh$tp"
-    echo -e "${green}./bchacktool-lite.sh -u$tp Otomatik Güncelleyici"
+    echo -e "Default Kullanım İçin Dosyayı ${lightgreen}./bchacktool.sh$tp"
+    echo -e "${green}./bchacktool.sh -u$tp Otomatik Güncelleyici"
     echo "----------------------------------------------------------"
     echo -e $cyan"    Create by           $white":" $red ByChan$tp"
     echo -e $cyan"    Youtube Kanalim     $white":" $red https://www.youtube.com/ByChan$tp"
@@ -39,7 +39,7 @@ if [[ $1 =~ ^(-h|--help|-y|--yardım) ]] ; then
     echo -e $cyan"    Instagram           $white":" $red @huseyinaltns$tp"
     echo -e "$cyan    Discord            $white : $red https://discord.gg/R6vApmn$tp"
     echo -e "$cyan    Tester             $white : $red CruelMSA$tp"
-    echo -e "$cyan    developper         $white : $red https://github.com/lastpingu$tp"
+    echo -e "$cyan    Developper         $white : $red https://github.com/lastpingu$tp"
     exit 0
 elif [[ $1 =~ ^(-u|--update|-g|--güncelle) ]] ; then
     checkupdatepermission=$(ls -l update | awk '{print $1}') 
@@ -112,7 +112,7 @@ trap ctrl_c INT
 ctrl_c() {
 echo -e "\n"
 echo -e "[${blink}${yellow}*${tp}]$red (Ctrl + C ) Tespit Edildi Cikiliyor...$tp"
-echo -e "[${blink}${yellow}*${tp}]$blue BCHackTool Programini Tercih Ettiginiz Icin Tesekkurler  {ByChan} :)$tp"
+echo -e "[${blink}${yellow}*${tp}]$blue BCHackTool Programini Tercih Ettiginiz Için Teşekkürler  {ByChan} :)$tp"
 exit 0
 }
 
@@ -124,7 +124,7 @@ function checkinternet {
   if [[ "$?" != 0 ]]
   then
     echo -e " Internet Kontrol Ediliyor...: ${red}BAGLANAMADI$tp \n Bu Programin Etkin Bir Internete Ihtiyaci Var"
-    echo "Simdi Çıkılıyor"
+    echo "Şimdi Çıkılıyor"
     exit 1
   else
     echo "Interet Kontrol Ediliyor: BAGLANDI"
@@ -149,14 +149,14 @@ fi
 # ruby check
 checkruby=$(which ruby)
 if [[ $checkruby = "" ]] ; then
-    echo "ruby kuruluyor"
+    echo "Ruby Kuruluyor..."
     apt install ruby -y &> /dev/null
     spinlong
 fi
 # check lolcat
 checklolcat=$(lolcat -v | awk '{print $1}')
 if [[ $checklolcat = "" ]] ; then
-	echo "lolcat kuruluyor"
+	echo "Lolcat Kuruluyor..."
 	gem install lolcat &> /dev/null
 	spinlong
 fi
@@ -167,7 +167,7 @@ if [[ -f /usr/local/bin/lolcat ]] ; then
 elif [[ -f /usr/games/lolcat ]] ; then
 	lc='/usr/games/lolcat'
 else
-echo "lolcat yüklenirken hata oldu manuel olarak kurunuz: "
+echo "Lolcat Yüklenirken Hata Oldu Manuel Olarak Kurunuz: "
 fi
 
 ## check piton
@@ -175,7 +175,7 @@ fi
 #python
 checkpython=$(which python)
 if [[ $checkpython = "" ]] ; then
-    echo "python kuruluyor"
+    echo "Python Kuruluyor..."
     apt install -y python python-pip &> /dev/null
     spinlong
 fi
@@ -183,7 +183,7 @@ fi
 #python2
 checkpython2=$(which python2)
 if [[ $checkpython2 = "" ]] ; then
-    echo "python kuruluyor"
+    echo "Python2 Kuruluyor..."
     apt install -y python2 python2-pip &> /dev/null
     spinlong
 fi
@@ -191,7 +191,7 @@ fi
 #python3
 checkpython3=$(which python3)
 if [[ $checkpython3 = "" ]] ; then
-    echo "python kuruluyor"
+    echo "Python3 Kuruluyor..."
     apt install -y python3 python3-pip &> /dev/null
     spinlong
 fi
@@ -205,15 +205,15 @@ banner
 echo ""
 echo -e "${blink}${lightgreen}  ---------------------------------------------------------$tp"
 echo -e "${blink}${lightgreen}  |$tp ${cyan}Create by           $white":" $red ByChan$tp ${blink}${lightgreen}                        |$tp"
-echo -e "${blink}${lightgreen}  |$tp ${cyan}Youtube Kanalim     $white":" $red https://www.youtube.com/ByChan$tp ${blink}${lightgreen}|$tp"
+echo -e "${blink}${lightgreen}  |$tp ${cyan}Youtube             $white":" $red https://www.youtube.com/ByChan$tp ${blink}${lightgreen}|$tp"
 echo -e "${blink}${lightgreen}  |$tp ${cyan}Github              $white":" $red https://github.com/ByCh4n$tp ${blink}${lightgreen}     |$tp"
 echo -e "${blink}${lightgreen}  |$tp ${cyan}Instagram           $white":" $red huseyinaltns$tp ${blink}${lightgreen}                  |$tp"
 echo -e "${blink}${lightgreen}  ---------------------------------------------------------$tp\n"
-echo "  ~~~~~~~~~~~~~~~~~~~~~ BcHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
+echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
         echo ""
         echo " [1] ✔ Inshackle             [2] ✔ Kickthemout" | $lc
         echo " [3] ✔ Torghost              [4] ✔ HiddenEye" | $lc
-        echo " [5] ✔ ByChan-Ddos           [6] ✔ Userrecon" | $lc
+        echo " [5] ✔ ByChan-Ddos           [6] ✔ UserRecon" | $lc
         echo " [7] ✔ Seeker                [8] ✔ Instashell" | $lc
         echo " [9] ✔ BluForceFB            [10] ✔ Cupp" | $lc
         echo " [11] ✔ SpamWa               [12] ✔ RZP" | $lc
@@ -221,7 +221,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BcHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
 		echo " [15] ✔ Bruter19             [16] ✔ CamHackers" | $lc
 		echo " [17] ✔ TheFatRat            [18] ✔ PhoneInfoga" | $lc
         echo " [19] ✔ RequiredChan" | $lc
-        echo " [q] ✔ Çıkış                 [h] ✔ Araçlar Hakkında Bilgi Ve Kullanım" | $lc
+        echo " [q] ✔ Exit                  [h] ✔ Araçlar Hakkında Bilgi Ve Kullanım" | $lc
         echo ""
         echo -ne "❨${red}BCHackTool@ByCh4n${tp}❩:(${blue}./BCHackTool${tp})\n↳[${blink}${lightcyan}*${tp}]➢ " ; read option
         
@@ -350,12 +350,12 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BcHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
             else 
                 clear
                 cat banners/bcbanner  
-                echo -e $red "~~~~~~~~~~~~~~~ Userrecon İndiriliyor ~~~~~~~~~~~~~~~"
+                echo -e $red "~~~~~~~~~~~~~~~ UserRecon İndiriliyor ~~~~~~~~~~~~~~~"
                 git clone https://github.com/issamelferkh/userrecon > /dev/null 2>&1
                 spinlong
                 cd userrecon
                 chmod +x userrecon.sh
-                echo -e "$red  ~~~~~~~~~~~ Userrecon Kuruldu ~~~~~~~~~~~~$tp"
+                echo -e "$red  ~~~~~~~~~~~ UserRecon Kuruldu ~~~~~~~~~~~~$tp"
                 cd ..
                 pressanykey3
             fi
@@ -580,7 +580,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BcHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
             else 
                 clear
                 cat banners/bcbanner   
-                echo -e $red "~~~~~~~~~~~~~~~ Bruter19 ~~~~~~~~~~~~~~~"
+                echo -e $red "~~~~~~~~~~~~~~~ Bruter19 İndiriliyor ~~~~~~~~~~~~~~~"
                 git clone https://github.com/AzizKpln/Bruter19 > /dev/null 2>&1
                 spinlong
                 cd Bruter19
@@ -605,7 +605,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BcHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
             else 
                 clear
                 cat banners/bcbanner   
-                echo -e $red "~~~~~~~~~~~~~~~ Cam-Hackers ~~~~~~~~~~~~~~~"
+                echo -e $red "~~~~~~~~~~~~~~~ Cam-Hackers İndiriliyor ~~~~~~~~~~~~~~~"
                 git clone https://github.com/AngelSecurityTeam/Cam-Hackers > /dev/null 2>&1
                 spinlong
                 cd Cam-Hackers
@@ -704,7 +704,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BcHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 git clone https://github.com/ByCh4n/RequiredChan > /dev/null 2>&1
                 spinlong
                 cd RequiredChan
-                echo -e "$red  ~~~~~~~~~~~ PhoneInfoga Kuruldu ~~~~~~~~~~~~$tp"
+                echo -e "$red  ~~~~~~~~~~~ RequiredChan Kuruldu ~~~~~~~~~~~~$tp"
                 pressanykey3
             fi
             clear
@@ -715,6 +715,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BcHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 ;;
             h)
                 clear
+                cat banners/bcbanner
                 echo -e "1 : Açıklama  : Inshackle Otomatik Takipçi Gönderme Programıdır\nKullanımı : 2 Seçeneğe Basıp Kullanıcı Adı Şifre Girerek Takipçilerinizi Gönderebilirsiniz.\nYapımcı   : Thelinuxchoice\n"
                 echo -e "2 : Açıklama  : Kickthemout Wifi Ağınızdaki Kişileri Kicklemek Yani (Atmak) Amacıyla kullanılmaktadır .\nKullanımı : 1. Seçenek Tek Bir Kişiyi Seçip Atar 2. Seçenek Birkaç Kişi 3. Herkesi Atar .\nYapımcı   : k4m4\n"
                 echo -e "3 : Açıklama  : Torghost Programı Kendi Sabit Ipnizi Sürekli Olarak Değiştirerek Bir Nevi Anonim Olmanızı Sağlar .\nKullanımı : Terminale torghost -s Derseniz Çalıştırmış Olacaksınız torghost -x Derseniz Duracaktır .\nYapımcı   : SusmithKrishnan\n"
