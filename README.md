@@ -19,6 +19,8 @@ Her Yeni Videoda Program Güncellenicektir. 🆕
 
 Root Olarak Giriş Yapmadıysanız Root Olarak Giriş Yapınız Yada Komutların Başlarına "sudo" Komutunu Eklemeyi Unutmayınız ❕
 
+- Programın Geliştirilmesine Yardımcı Olan lastpingu Arkadaşımıza Teşekkür Ederiz. :) <3
+
 EN
 --
 This Program Was Prepared By ByChan.
@@ -38,6 +40,8 @@ When You First Run The Program, First Run The [19] Automatic Updater. ✔
 Each New Video Will Update The Program. 🆕
 
 If you have not logged in as Root, Please log in as Root or do not forget to add the command "sudo" to the beginning of the commands ❕
+
+- Thank You To Our Friend lastpingu Who Helped Develop The Program. :) <3
 
 --------------------------------------------------------------------------
 
@@ -91,10 +95,8 @@ Innovations And Uses :
 
 - Bugs Fixed.
 
-Help
+ByChan
 ---
-- Helping to Develop the Program By lastpingu
-
 
 - Dilerim Ki Sizler İçin Yararlı Olmuştur. :)
 
