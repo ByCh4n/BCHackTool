@@ -42,24 +42,24 @@ If you have not logged in as Root, Please log in as Root or do not forget to add
 --------------------------------------------------------------------------
 
 Kali Linux - Installation(Kurulum):
+--
+- git clone https://github.com/ByCh4n/BCHackTool
 
-💲 git clone https://github.com/ByCh4n/BCHackTool
+- cd BCHackTool
 
-💲 cd BCHackTool
+- chmod +x bchacktool.sh
 
-💲 chmod +x bchacktool.sh
-
-💲 ./bchacktool.sh
+- ./bchacktool.sh
 
 Termux - Installation(Kurulum):
+--
+- git clone https://github.com/ByCh4n/BCHackTool
 
-💲 git clone https://github.com/ByCh4n/BCHackTool
+- cd BCHackTool
 
-💲 cd BCHackTool
+- chmod +x bchacktool-termux.sh
 
-💲 chmod +x bchacktool-termux.sh
-
-💲 ./bchacktool-termux.sh
+- ./bchacktool-termux.sh
 
 --------------------------------------------------------------------------
 
@@ -79,12 +79,25 @@ Yenilikler Ve Kullanımları :
 
 - Hatalar Giderildi.
 
+Innovations And Uses :
+----
+- It's Colored And The Banner Is Set To Change Automatically.
+
+- . /bchacktool.sh - V parameter added, indicates the version of Scriptin.
+
+- . /bchacktool.sh -H parameter added, gives information about Scriptin makers.
+
+- . /bchacktool.sh the-s parameter is added, used to delete programs in the script if they do not work.
+
+- Bugs Fixed.
+
 Help
 ---
 - Helping to Develop the Program By lastpingu
 
 
 - Dilerim Ki Sizler İçin Yararlı Olmuştur. :)
+
 - I think it's been good for you. :)
 
 - Kali Linux ✔
