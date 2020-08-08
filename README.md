@@ -70,9 +70,13 @@ Donate : https://www.bynogame.com/destekle/ByChan
 Yenilikler Ve Kullanımları :
 ----
 1 - Renklendirildi Ve Banner Otomatik Değiştirelecek Şekilde Ayarlandı.
+
 2 - ./bchacktool.sh -v Parametresi Eklendi,Scriptin Sürümünü Gösterir.
+
 3 - ./bchacktool.sh -h Parametresi Eklendi,Scriptin Yapımcıları Hakkında Bilgi Verir.
+
 4 - ./bchacktool.sh -s Parametresi Eklendi,Scriptteki Programlar Çalışmaz İse Silinmesi İçin Kullanılır.
+
 5 - Hatalar Giderildi.
 
 
