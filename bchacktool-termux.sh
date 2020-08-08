@@ -288,23 +288,24 @@ clear
 banner
 echo -e "${blink}${lightgreen}  ---------------------------------------------------------$tp"
 echo -e "${blink}${lightgreen}  |$tp ${cyan}Create by           $white":" $red ByChan$tp ${blink}${lightgreen}                        |$tp"
-echo -e "${blink}${lightgreen}  |$tp ${cyan}Youtube Kanalim     $white":" $red https://www.youtube.com/ByChan$tp ${blink}${lightgreen}|$tp"
+echo -e "${blink}${lightgreen}  |$tp ${cyan}Youtube             $white":" $red https://www.youtube.com/ByChan$tp ${blink}${lightgreen}|$tp"
 echo -e "${blink}${lightgreen}  |$tp ${cyan}Github              $white":" $red https://github.com/ByCh4n$tp ${blink}${lightgreen}     |$tp"
 echo -e "${blink}${lightgreen}  |$tp ${cyan}Instagram           $white":" $red huseyinaltns$tp ${blink}${lightgreen}                  |$tp"
 echo -e "${blink}${lightgreen}  ---------------------------------------------------------$tp\n"
 echo " ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
         echo
-        echo " [1] ✔ Facebook Bruteforce" | $lc
-        echo " [2] ✔ WordList Oluşturma" | $lc
-        echo " [3] ✔ Whatsapp Spam Bomber" | $lc
-        echo " [4] ✔ Kişi Analizi" | $lc
-		echo " [5] ✔ Numaradan Bilgi Öğrenme" | $lc
-		echo " [6] ✔ Ip Tracer" | $lc
-		echo " [7] ✔ Facebook Email-Numara Öğrenme" | $lc
-		echo " [8] ✔ CCTV Cam Hack" | $lc
-        echo " [9] ✔ Gerekli Program Yükleyici" | $lc
+        echo " [1] ✔ BluForce-FB" | $lc
+        echo " [2] ✔ Cupp" | $lc
+        echo " [3] ✔ SpamWa" | $lc
+        echo " [4] ✔ UserRecon" | $lc
+		echo " [5] ✔ PhoneInfoga" | $lc
+		echo " [6] ✔ Ip-Tracer" | $lc
+		echo " [7] ✔ OSIF" | $lc
+		echo " [8] ✔ CamHackers" | $lc
+        echo " [9] ✔ RequiredChan" | $lc
         echo " [b] ✔ Random Banner Bastırır" | $lc
-        echo " [q] ✔ Çıkış" | $lc 
+        echo " [h] ✔ Help" | $lc
+        echo " [q] ✔ Exit" | $lc 
         echo -ne "\n${red}┌─[${tp}${USER}${yellow}@${blue}BCHackTool${red}]─[${green}./bchacktool-termux.sh${red}] \n└──╼${yellow}$ ${tp}" ; read option
         echo ""
     
@@ -315,14 +316,14 @@ echo " ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
             else
                 clear
                 cat banners/bcbanner
-                echo -e $red " ~~~~~~~~~~~ Facebook Bruteforce İndiriliyor ~~~~~~~~~~~~$tp"
+                echo -e $red " ~~~~~~~~~~~ BluForce-FB İndiriliyor ~~~~~~~~~~~~$tp"
                 git clone https://github.com/AngelSecurityTeam/BluForce-FB > /dev/null 2>&1
                 spinlong
                 cd BluForce-FB
                 echo -e "$red  ~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~$tp"
                 pip2 install mechanize &> /dev/null
                 spinlong
-                echo -e $red " ~~~~~~~~~~~ Facebook Bruteforce Kurulumu Bitti ~~~~~~~~~~~$tp"
+                echo -e $red " ~~~~~~~~~~~ BluForce-FB Kuruldu ~~~~~~~~~~~$tp"
                 cd ..
                 pressanykey3
             fi
@@ -341,7 +342,7 @@ echo " ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 echo ""
                 git clone https://github.com/Mebus/cupp > /dev/null 2>&1
                 spinlong
-                echo -e $red " ~~~~~~~~~~~ Cupp Kurulumu Bitti ~~~~~~~~~~~$tp"
+                echo -e $red " ~~~~~~~~~~~ Cupp Kuruldu ~~~~~~~~~~~$tp"
                 pressanykey3
             fi
             clear
@@ -355,7 +356,7 @@ echo " ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
             else
                 clear
                 cat banners/bcbanner
-                echo -e $red " ~~~~~~~~~~~ Whatsapp Spam Bomber İndiriliyor ~~~~~~~~~~~~$tp"
+                echo -e $red " ~~~~~~~~~~~ SpamWa İndiriliyor ~~~~~~~~~~~~$tp"
                 echo ""
                 git clone https://github.com/sandiwijayani1/SpamWa > /dev/null 2>&1
                 spinlong
@@ -364,7 +365,7 @@ echo " ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 pip install requests &> /dev/null
                 spinlong
                 echo ""
-                echo -e $red " ~~~~~~~~~~~ Whatsapp Spam Bomber Kurulumu Bitti ~~~~~~~~~~~$tp"
+                echo -e $red " ~~~~~~~~~~~ SpamWa Kuruldu ~~~~~~~~~~~$tp"
                 pressanykey3
                 cd ..
             fi
@@ -379,11 +380,11 @@ echo " ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
             else
                 clear
                 cat banners/bcbanner
-                echo -e $red "~~~~~~~~~~~ Kişi Analizi Aracı İndiriliyor ~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~ UserRecon İndiriliyor ~~~~~~~~~~~~$tp"
                 echo ""
                 git clone https://github.com/issamelferkh/userrecon > /dev/null 2>&1
                 spinlong
-                echo -e $red "~~~~~~~~~~~ Kişi Analizi Aracı Kurulumu Bitti ~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~ UserRecon Kuruldu ~~~~~~~~~~~~$tp"
                 echo ""
                 pressanykey3
             fi
@@ -398,7 +399,7 @@ echo " ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
             else
                 clear
                 cat banners/bcbanner
-                echo -e $red " ~~~~~~~~~~~ Numaradan Bilgi Öğrenme Aracı İndiriliyor ~~~~~~~~~~~~$tp"
+                echo -e $red " ~~~~~~~~~~~ PhoneInfoga İndiriliyor ~~~~~~~~~~~~$tp"
                 echo ""
                 git clone https://github.com/Wes974/PhoneInfoga > /dev/null 2>&1
                 spinlong
@@ -407,7 +408,7 @@ echo " ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 pip install -r requirements.txt &> /dev/null
                 spinlong
                 echo ""
-                echo -e $red " ~~~~~~~~~~~ Numaradan Bilgi Bitti Aracı Kurulumu Bitti ~~~~~~~~~~~$tp"
+                echo -e $red " ~~~~~~~~~~~ PhoneInfoga Kuruldu ~~~~~~~~~~~$tp"
                 pressanykey3
                 cd ..
             fi
@@ -442,17 +443,17 @@ echo " ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
             else
                 clear
                 cat banners/bcbanner
-                echo -e $red " ~~~~~~~~~~~ Ip Tracer İndiriliyor ~~~~~~~~~~~~$tp"
+                echo -e $red " ~~~~~~~~~~~ Ip-Tracer İndiriliyor ~~~~~~~~~~~~$tp"
                 git clone https://github.com/rajkumardusad/IP-Tracer > /dev/null 2>&1
                 spinlong
                 cd IP-Tracer
                 chmod +x install
                 echo -e ""
-                echo -e $red " ~~~~~~~~~~~ Ip Tracer Kuruluyor ~~~~~~~~~~~~$tp"
+                echo -e $red " ~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~$tp"
 				./install &> /dev/null
                 spinlong
                 echo ""
-                echo -e $red " ~~~~~~~~~~~ Ip Tracer Kurulumu Bitti ~~~~~~~~~~~$tp"
+                echo -e $red " ~~~~~~~~~~~ Ip-Tracer Kuruldu ~~~~~~~~~~~$tp"
                 cd ..
                 pressanykey3
             fi
@@ -467,7 +468,7 @@ echo " ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
             else
                 clear
                 cat banners/bcbanner
-                echo -e $red " ~~~~~~~~~~~ Facebook Email-Numara Öğrenme Aracı İndiriliyor ~~~~~~~~~~~~$tp"
+                echo -e $red " ~~~~~~~~~~~ OSIF İndiriliyor ~~~~~~~~~~~~$tp"
                 git clone https://github.com/CiKu370/OSIF > /dev/null 2>&1
                 spinlong
                 echo -e $red " ~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~$tp"
@@ -475,7 +476,7 @@ echo " ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 pip2 install -r requirements.txt &> /dev/null
 				spinlong
                 echo ""
-                echo -e $red " ~~~~~~~~~~~ Facebook Email-Numara Öğrenme Aracı Kurulumu Bitti ~~~~~~~~~~~$tp"
+                echo -e $red " ~~~~~~~~~~~ OSIF Kuruldu ~~~~~~~~~~~$tp"
                 cd ..
                 pressanykey3
             fi
@@ -490,7 +491,7 @@ echo " ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
             else
                 clear
                 cat banners/bcbanner
-                echo -e $red " ~~~~~~~~~~~ CCTV Cam Hack ~~~~~~~~~~~~$tp"
+                echo -e $red " ~~~~~~~~~~~ Cam-Hackers İndirliyor ~~~~~~~~~~~~$tp"
                 git clone https://github.com/AngelSecurityTeam/Cam-Hackers > /dev/null 2>&1
                 spinlong
                 cd Cam-Hackers
@@ -502,7 +503,7 @@ echo " ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 spinlong
                 cd ..
                 pressanykey3
-                echo -e $red " ~~~~~~~~~~~ Facebook Email-Numara Öğrenme Bitti ~~~~~~~~~~~$tp"
+                echo -e $red " ~~~~~~~~~~~ Cam-Hackers Kuruldu ~~~~~~~~~~~$tp"
             fi
                 clear
                 cd Cam-Hackers
@@ -515,10 +516,10 @@ echo " ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
             else
                 clear
                 cat banners/bcbanner
-                echo -e $red " ~~~~~~~~~~~ Gerekli Program Yükleyici ~~~~~~~~~~~~$tp"
+                echo -e $red " ~~~~~~~~~~~ RequiredChan İndiriliyor ~~~~~~~~~~~~$tp"
                 git clone https://github.com/ByCh4n/RequiredChan > /dev/null 2>&1
                 spinlong
-                echo -e $red " ~~~~~~~~~~~ Gerekli Program Yükleyici Bitti ~~~~~~~~~~~$tp"
+                echo -e $red " ~~~~~~~~~~~ RequiredChan Kuruldu ~~~~~~~~~~~$tp"
                 pressanykey3
             fi
                 clear
@@ -528,6 +529,20 @@ echo " ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 ;;
             b)
                 clear # not yet sadece döngüden yararlanır
+                ;;
+            h)
+                clear
+                cat banners/bcbanner
+                echo -e "1 : Açıklama  : BluForceFB Programı Facebook İçin Hazırlanmış Kaba Kuvvet Saldırısıdır.\nKullanımı : Email Kısmına Karşı Tarafın Email Adresini Gireceksiniz Ve Oluşturduğunuz Wordlisti Girdikten Sonra İşlem Tamam. :)\nYapımcı   : AngelSecurityTeam\n"
+                echo -e "2 : Açıklama  : Cupp Programı BruteForce Sistemlerinde İstenen Wordlist Oluşturma Programıdır .\nKullanımı : Karşınıza Çıkan Kısımda Kim İçin Wordlisti Oluşturacaksanız Onun Bilgilerini Gireceksiniz.\nYapımcı   : Mebus\n"
+                echo -e "3 : Açıklama  : SpamWa Programı Karşı Tarafın Telefon Bilgisi Girildikten Sonra Whatsapptan Saçma Sapan Sağlayıcılardan Sms Atar.\nKullanımı : Karşına Gelen Kısımda Bir Sağlayıcı Seçiceksin Tokopedia Olabilir Ve Sonrasında Numara Gireceksin Oldu Bile . :)\nYapımcı   : Unknown\n"
+                echo -e "4 : Açıklama  : UserRecon Programı Kişi Analizi Programıdır Yani Her Bir Sosyal Medya Üzerinden Yazdığınız Nicki Taratır Ve Sonuçları Karşınıza Getirir .\nKullanımı : Karşınıza Çıkan Kısımda Herhangi bir Kullanıcı Adını Yazınız Yani Karşı Tarafa Yönelik İstediğiniz Bir Nick Diyebiliriz .\nYapımcı   : Thelinuxchoice\n"
+                echo -e "5 : Açıklama  : PhoneInfoga Programı Telefon Numarasından Bilgi Toplama Aracıdır .\nKullanımı : Karşınıza Çıkan Menüde İstediğiniz Ülke Kodunu Seçiniz Ve Numarayı Giriniz Sonuçlar Karşınızda. :)\nYapımcı   : Wes974\n"               
+                echo -e "6 : Açıklama  : Ip-Tracer Programı Karşı Tarafın Ipsini Öğrendikten Sonra Karşınıza Birkaç Ip Hakkında Bilgi Çıkartır .\nKullanımı : Karşınıza Çıkan Menüden 1. Seçeneği Seçiniz Ve İp Adresini Giriniz Ve Karşında Bilgiler . :)\nYapımcı   : rajkumardusad\n"
+                echo -e "7 : Açıklama  : OSIF Programı Facebook Sitesinin Açığını Kullanarak Yapılan Bir Programdır Facebook Arkadaşlarınızın Email Ve Telefon Numaralarını Öğrenebilirsiniz Bu Program Sayesinde.\nKullanımı : Karşınıza Gelen Kısıma token Yazarak Sizden İstenilen Email Ve Şifrenizi Giriniz (Facebook) Girdikten Sonra dump_mail Yazarsanız Sizin Facebook Hesabınızda Ekli Olan Kişilerin Email Hesaplarını dumo_phone Yazarsanız Ekli Olan Kişilerin Telefon Numaralarını Elde Edersiniz. :)\nYapımcı   : Ciku370\n"
+                echo -e "8 : Açıklama  : Cam-Hackers Programı Şifresi Bulunmayan Admin Paneli Bulunmayan Açık Olan Güvenlik Kameralarına Sızmak İçin Kullanılan Bir Araçtır.\nKullanımı : Karşınıza Çıkan Bir Kısımda İstediğiniz Bir Ülkeyi Seçiniz Ardından Çıkan Ip Adreslerinden Birini Tarayıcıda Aratınız Ve Kamera Karşınızda . :)\nYapımcı   : AngelSecurityTeam\n"
+                echo -e "9 : Açıklama  : RequiredChan Programı Sizin İçin Kali Linux Ve Termux Sistemlerine Gerekli Olan Programları Kurar Ve Kali Linux İçin Otomatik Depo Günceller .\nKullanımı : Karşınıza Çıkan Menüde Kali Linux Kullanıyorsanız 2. Seçenek Sonra 1. Seçenek Termux Kullanıyorsanız 1. Seçeneği Seçip Bekleyiniz.\nYapımcı   : ByChan\n"
+                pressanykey
                 ;;
             q) 
                 clear
