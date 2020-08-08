@@ -91,7 +91,6 @@ Help
 
 - Termux ✔
 
-![Ekran Alıntısı](https://user-images.githubusercontent.com/67187998/89692069-5280cc00-d913-11ea-83fd-782741d55b75.PNG)
+![1](https://user-images.githubusercontent.com/67187998/89713271-5b1ee400-d99f-11ea-8bf1-e364204e736d.PNG)
 
-![1](https://user-images.githubusercontent.com/67187998/89451200-7c47c080-d764-11ea-914f-3ed3506a7293.PNG)
-
+![2](https://user-images.githubusercontent.com/67187998/89713272-5c501100-d99f-11ea-8bbd-5a1eed3c9fbf.PNG)
