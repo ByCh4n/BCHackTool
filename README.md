@@ -79,6 +79,10 @@ Yenilikler Ve Kullanımları :
 
 5 - Hatalar Giderildi.
 
+Help
+---
+- Helping to Develop the Program By lazy-pwny
+
 
 Dilerim Ki Sizler İçin Yararlı Olmuştur. :)
 I think it's been good for you. :)
