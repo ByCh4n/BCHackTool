@@ -18,7 +18,7 @@
 # variables
     blink='\e[5m'
     setdir=$PWD
-    version='bchacktool V2.0'
+    version='BCHackTool v2.0'
 
 if [[ $USER = "root" ]] ; then
     echo "ok" &> /dev/null
@@ -211,17 +211,17 @@ echo -e "${blink}${lightgreen}  |$tp ${cyan}Instagram           $white":" $red h
 echo -e "${blink}${lightgreen}  ---------------------------------------------------------$tp\n"
 echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
         echo ""
-        echo " [1] ✔ Inshackle             [2] ✔ Kickthemout" | $lc
-        echo " [3] ✔ Torghost              [4] ✔ HiddenEye" | $lc
-        echo " [5] ✔ ByChan-Ddos           [6] ✔ UserRecon" | $lc
-        echo " [7] ✔ Seeker                [8] ✔ Instashell" | $lc
-        echo " [9] ✔ BluForceFB            [10] ✔ Cupp" | $lc
-        echo " [11] ✔ SpamWa               [12] ✔ RZP" | $lc
-		echo " [13] ✔ Ip-Tracer            [14] ✔ OSIF" | $lc
-		echo " [15] ✔ Bruter19             [16] ✔ CamHackers" | $lc
-		echo " [17] ✔ TheFatRat            [18] ✔ PhoneInfoga" | $lc
-        echo " [19] ✔ RequiredChan" | $lc
-        echo " [q] ✔ Exit                  [h] ✔ Araçlar Hakkında Bilgi Ve Kullanım" | $lc
+        echo " [1] ✔ Inshackle             [2] ✔ Kickthemout             [21] ✔ Ghost" | $lc
+        echo " [3] ✔ Torghost              [4] ✔ HiddenEye               [22] ✔ Quack" | $lc
+        echo " [5] ✔ ByChan-Ddos           [6] ✔ UserRecon             " | $lc
+        echo " [7] ✔ Seeker                [8] ✔ Instashell             " | $lc
+        echo " [9] ✔ BluForce-FB           [10] ✔ Cupp             " | $lc
+        echo " [11] ✔ SpamWa               [12] ✔ RZP             " | $lc
+		echo " [13] ✔ Ip-Tracer            [14] ✔ OSIF             " | $lc
+		echo " [15] ✔ Bruter19             [16] ✔ CamHackers             " | $lc
+		echo " [17] ✔ TheFatRat            [18] ✔ PhoneInfoga             " | $lc
+        echo " [19] ✔ RequiredChan         [20] ✔ RED_HAWK             " | $lc
+        echo " [x] ✔ Exit                  [h] ✔ Help             " | $lc
         echo ""
         echo -ne "❨${red}BCHackTool@ByCh4n${tp}❩:(${blue}./BCHackTool${tp})\n↳[${blink}${lightcyan}*${tp}]➢ " ; read option
         
@@ -235,7 +235,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 echo -e $red "~~~~~~~~~~~~~~~ Inshackle İndiriliyor ~~~~~~~~~~~~~~~"
                 git clone https://github.com/Sanju8943/inshackle > /dev/null 2>&1
                 spinlong
-                echo -e $red " ~~~~~~~~~~~~~~~ Inshackle İndirildi ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ Inshackle Kuruldu ~~~~~~~~~~~~~~~$tp"
                 cd inshackle
                 chmod +x inshackle.sh
                 cd ..
@@ -256,7 +256,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 git clone https://github.com/k4m4/kickthemout > /dev/null 2>&1
                 spinlong
                 cd kickthemout
-                echo -e "$red  ~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
                 {
                 apt-get install -y nmap
                 apt-get install -y python3               
@@ -266,7 +266,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 } &> /dev/null
                 spinlong
                 cd ..
-                echo -e "$red  ~~~~~~~~~~~~~~~ Kickthemout Kuruldu ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ Kickthemout Kuruldu ~~~~~~~~~~~~~~~$tp"
                 pressanykey3
             fi
             clear
@@ -284,13 +284,13 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 git clone https://github.com/SusmithKrishnan/torghost > /dev/null 2>&1
                 spinlong
                 cd torghost
-                echo -e "$red  ~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
                 {
                 chmod +x install.sh
                 ./install.sh
                 } &> /dev/null
                 spinlong
-                echo -e "$red  ~~~~~~~~~~~~~~~ Torghost Kuruldu ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ Torghost Kuruldu ~~~~~~~~~~~~~~~$tp"
                 pressanykey3
             fi
             clear
@@ -308,14 +308,14 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 git clone https://github.com/DarkSecDevelopers/HiddenEye > /dev/null 2>&1
                 spinlong
                 cd HiddenEye
-                echo -e "$red  ~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
                 {
 	            pip3 install -r requirements.txt
 			    apt-get install -y php
 			    pip install php
                 } &> /dev/null
                 spinlong
-                echo -e "$red  ~~~~~~~~~~~~~~~ HiddenEye Kuruldu ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ HiddenEye Kuruldu ~~~~~~~~~~~~~~~$tp"
                 cd ..
                 pressanykey3
             fi
@@ -335,7 +335,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 spinlong
                 cd Ddos-Attack-ByChan
                 chmod +x Ddos.py
-                echo -e "$red  ~~~~~~~~~~~~~~~ ByChan-Ddos Kuruldu ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ ByChan-Ddos Kuruldu ~~~~~~~~~~~~~~~$tp"
                 cd ..
                 pressanykey3
             fi
@@ -355,7 +355,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 spinlong
                 cd userrecon
                 chmod +x userrecon.sh
-                echo -e "$red  ~~~~~~~~~~~~~~~ UserRecon Kuruldu ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ UserRecon Kuruldu ~~~~~~~~~~~~~~~$tp"
                 cd ..
                 pressanykey3
             fi
@@ -374,7 +374,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 git clone https://github.com/thewhiteh4t/seeker > /dev/null 2>&1
                 spinlong
                 cd seeker
-                echo -e "$red  ~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
                 {
                 sudo chmod +x install.sh
                 sudo chmod +x seeker.py
@@ -382,7 +382,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 apt-get install -y python3
                 } &> /dev/null
                 spinlong
-                echo -e "$red  ~~~~~~~~~~~~~~~ Seeker Kuruldu ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ Seeker Kuruldu ~~~~~~~~~~~~~~~$tp"
                 cd ..
                 pressanykey3
             fi
@@ -401,7 +401,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 git clone https://github.com/OffXec/instashell > /dev/null 2>&1
                 spinlong
                 cd instashell
-                echo -e "$red  ~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
                 {
                 chmod +x instashell.sh
                 chmod +x install.sh
@@ -411,7 +411,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 service tor start
                 } &> /dev/null
                 spinlong
-                echo -e "$red  ~~~~~~~~~~~~~~~ Instashell Kuruldu ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ Instashell Kuruldu ~~~~~~~~~~~~~~~$tp"
                 cd ..
                 pressanykey3
             fi
@@ -430,7 +430,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 git clone https://github.com/AngelSecurityTeam/BluForce-FB > /dev/null 2>&1
                 spinlong
                 cd BluForce-FB
-                echo -e "$red  ~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
                 {
                 chmod +x bluforcefb.py
                 apt-get install -y python2
@@ -438,7 +438,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 pip2 install mechanize
                 } &> /dev/null
                 spinlong
-                echo -e "$red  ~~~~~~~~~~~~~~~ BluForce-FB Kuruldu ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ BluForce-FB Kuruldu ~~~~~~~~~~~~~~~$tp"
                 cd ..
                 pressanykey3
             fi
@@ -457,13 +457,13 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 git clone https://github.com/Mebus/cupp > /dev/null 2>&1
                 spinlong
                 cd cupp
-                echo -e "$red  ~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
                 {
                 chmod +x cup.py
                 apt-get install -y python3
                 } &> /dev/null
                 spinlong
-                echo -e "$red  ~~~~~~~~~~~~~~~ Cupp Kuruldu ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ Cupp Kuruldu ~~~~~~~~~~~~~~~$tp"
                 cd ..
                 pressanykey3
             fi
@@ -482,7 +482,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 git clone https://github.com/sandiwijayani1/SpamWa > /dev/null 2>&1
                 spinlong
                 cd SpamWa
-                echo -e "$red  ~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
                 {
                 chmod +x spam.py
                 apt-get install -y python3
@@ -491,7 +491,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 } &> /dev/null
                 spinlong
                 cd ..
-                echo -e "$red  ~~~~~~~~~~~~~~~ SpamWa Kuruldu ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ SpamWa Kuruldu ~~~~~~~~~~~~~~~$tp"
                 pressanykey3
             fi
             clear
@@ -509,7 +509,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 git clone https://github.com/ByCh4n/Rar-Zip-Crack > /dev/null 2>&1
                 spinlong
                 cd Rar_Zip_Cracker
-                echo -e "$red  ~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
                 {
                 chmod +x rar_zip_cracker.py
                 apt-get install -y python3
@@ -517,7 +517,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 } &> /dev/null
                 spinlong
                 cd ..
-                echo -e "$red  ~~~~~~~~~~~~~~~ Rar-Zip-Crack Kuruldu ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ Rar-Zip-Crack Kuruldu ~~~~~~~~~~~~~~~$tp"
                 pressanykey3
             fi
             clear
@@ -535,14 +535,14 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 git clone https://github.com/rajkumardusad/IP-Tracer > /dev/null 2>&1
                 spinlong
                 cd IP-Tracer
-                echo -e "$red  ~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
                 {
                 chmod +x install
                 ./install
                 } &> /dev/null
                 spinlong
                 cd ..
-                echo -e "$red  ~~~~~~~~~~~~~~~ IP-Tracer Kuruldu ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ IP-Tracer Kuruldu ~~~~~~~~~~~~~~~$tp"
                 pressanykey3
             fi
             clear
@@ -560,13 +560,13 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 git clone https://github.com/CiKu370/OSIF > /dev/null 2>&1
                 spinlong
                 cd OSIF
-                echo -e "$red  ~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
                 {
                 pip2 install -r requirements.txt
                 } &> /dev/null
                 spinlong
                 cd ..
-                echo -e "$red  ~~~~~~~~~~~~~~~ OSIF Kuruldu ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ OSIF Kuruldu ~~~~~~~~~~~~~~~$tp"
                 pressanykey3
             fi
             clear
@@ -584,14 +584,14 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 git clone https://github.com/AzizKpln/Bruter19 > /dev/null 2>&1
                 spinlong
                 cd Bruter19
-                echo -e "$red  ~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
                 {
 				apt-get install -y python-pip
                 ./setup.sh
                 } &> /dev/null
                 spinlong
                 cd ..
-                echo -e "$red  ~~~~~~~~~~~~~~~ Bruter19 Kuruldu ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ Bruter19 Kuruldu ~~~~~~~~~~~~~~~$tp"
                 pressanykey3
             fi
             clear
@@ -609,14 +609,14 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 git clone https://github.com/AngelSecurityTeam/Cam-Hackers > /dev/null 2>&1
                 spinlong
                 cd Cam-Hackers
-                echo -e "$red  ~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
                 {
                 apt-get install -y python3-pip
                 pip3 install requests
                 } &> /dev/null
                 spinlong
                 cd ..
-                echo -e "$red  ~~~~~~~~~~~~~~~ Cam-Hackers Kuruldu ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ Cam-Hackers Kuruldu ~~~~~~~~~~~~~~~$tp"
                 pressanykey3
             fi
             clear
@@ -634,7 +634,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 git clone https://github.com/Screetsec/TheFatRat > /dev/null 2>&1
                 spinlong
                 cd TheFatRat
-                echo -e "$red  ~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
                 {
                 apt-get install -y default-jdk
                 chmod +x setup.sh
@@ -642,7 +642,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 } #&> /dev/null
                 spinlong
                 cd ..
-                echo -e "$red  ~~~~~~~~~~~~~~~ TheFatRat Kuruldu ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ TheFatRat Kuruldu ~~~~~~~~~~~~~~~$tp"
                 pressanykey3
             fi
             clear
@@ -663,7 +663,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 git clone https://github.com/Wes974/PhoneInfoga > /dev/null 2>&1
                 spinlong
                 cd PhoneInfoga
-                echo -e "$red  ~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
                 {
                 sudo apt-get install -y python
                 sudo apt-get install -y python-pip
@@ -671,7 +671,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 } &> /dev/null
                 spinlong
                 cd ..
-                echo -e "$red  ~~~~~~~~~~~~~~~ PhoneInfoga Kuruldu ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ PhoneInfoga Kuruldu ~~~~~~~~~~~~~~~$tp"
                 pressanykey3
             fi
             while :; do
@@ -700,11 +700,11 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
             else 
                 clear
                 cat banners/bcbanner   
-                echo -e $red "~~~~~~~~~~~~~~~ RequiredChan İndirildi ~~~~~~~~~~~~~~~"
+                echo -e $red "~~~~~~~~~~~~~~~ RequiredChan İndiriliyor ~~~~~~~~~~~~~~~"
                 git clone https://github.com/ByCh4n/RequiredChan > /dev/null 2>&1
                 spinlong
                 cd RequiredChan
-                echo -e "$red  ~~~~~~~~~~~~~~~ RequiredChan Kuruldu ~~~~~~~~~~~~~~~$tp"
+                echo -e $red "~~~~~~~~~~~~~~~ RequiredChan Kuruldu ~~~~~~~~~~~~~~~$tp"
                 pressanykey3
             fi
             clear
@@ -712,6 +712,76 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
             chmod +x reqchan
             ./reqchan
             cd ..
+                ;;
+            20)
+            if [[ -d RED_HAWK ]] ; then
+                ok
+            else
+                clear
+                cat banners/bcbanner
+                echo -e $red "~~~~~~~~~~~~~~~ RED_HAWK İndiriliyor ~~~~~~~~~~~~~~~"
+                git clone https://github.com/Tuhinshubhra/RED_HAWK > /dev/null 2>&1
+                spinlong
+                cd RED_HAWK
+                echo -e $red "~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
+                {
+                sudo apt-get -qq --assume-yes install php-curl
+                sudo apt-get -qq --assume-yes install php-xml
+                } &> /dev/null
+                spinlong
+                cd ..
+                echo -e $red "~~~~~~~~~~~~~~~ RED_HAWK Kuruldu ~~~~~~~~~~~~~~~$tp"
+                pressanykey3
+            fi
+            clear
+            cd RED_HAWK
+            php rhawk.php
+                ;;
+            21)
+            if [[ -d ghost ]] ; then
+                ok
+            else
+                clear
+                cat banners/bcbanner
+                echo -e $red "~~~~~~~~~~~~~~~ Ghost İndiriliyor ~~~~~~~~~~~~~~~"
+                git clone https://github.com/entynetproject/ghost > /dev/null 2>&1
+                spinlong
+                cd ghost
+                echo -e $red "~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
+                {
+                chmod +x install.sh 
+                ./install.sh
+                } &> /dev/null
+                spinlong
+                cd ..
+                echo -e $red "~~~~~~~~~~~~~~~ Ghost Kuruldu ~~~~~~~~~~~~~~~$tp"
+            fi
+            clear
+            cd ghost
+            ghost
+             	;;
+            22)
+            if [[ -d quack ]] ; then
+                ok
+            else
+                clear
+                cat banners/bcbanner
+                echo -e $red "~~~~~~~~~~~~~~~ Quack İndiriliyor ~~~~~~~~~~~~~~~"
+                git clone https://github.com/entynetproject/quack > /dev/null 2>&1
+                spinlong
+                cd quack
+                echo -e $red "~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
+                {
+                chmod +x install.sh
+                ./install.sh
+                } &> /dev/null
+                spinlong
+                cd ..
+                echo -e $red "~~~~~~~~~~~~~~~ Quack Kuruldu ~~~~~~~~~~~~~~~$tp"
+            fi
+            clear
+            cd quack -h
+            sleep 10
                 ;;
             h)
                 clear
@@ -735,9 +805,12 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 echo -e "17 : Açıklama  : TheFatRat Programı Trojan Backdoor Oluşturmak İçin Kullanılan Sağlam Bir Programdır .\nKullanımı : Karşınıza Çıkan Menüden İstediğinizi Seçerek Yolunuza Bakın. :)\nYapımcı   : Screetsec\n"
                 echo -e "18 : Açıklama  : PhoneInfoga Programı Telefon Numarasından Bilgi Toplama Aracıdır .\nKullanımı : Karşınıza Çıkan Menüde İstediğiniz Ülke Kodunu Seçiniz Ve Numarayı Giriniz Sonuçlar Karşınızda. :)\nYapımcı   : Wes974\n"
                 echo -e "19 : Açıklama  : RequiredChan Programı Sizin İçin Kali Linux Ve Termux Sistemlerine Gerekli Olan Programları Kurar Ve Kali Linux İçin Otomatik Depo Günceller .\nKullanımı : Karşınıza Çıkan Menüde Kali Linux Kullanıyorsanız 2. Seçenek Sonra 1. Seçenek Termux Kullanıyorsanız 1. Seçeneği Seçip Bekleyiniz.\nYapımcı   : ByChan\n"
+                echo -e "20 : Açıklama  : RED_HAWK Programı Site Açıklarını Bulmak İçin Kullanılan Bir Programdır .\nKullanımı : Karşınıza Gelaen Kısımda İlk Çıkan Yere Siteyi Yazıkcasınız, Sonra Site http Mi Yoksa https Mi Onu Seçiceksiniz Ve Karşınıza Çıkan Menüden İstediğiniz Açığı Aratınız.\nYapımcı   : Tuhinshubhra\n"
+                echo -e "21 : Açıklama  : Ghost Programı Android Telefon Iplerine Sızmak İçin Kullanılan Programdır .\nKullanımı : Gelen Ekrana help Yazarsanız Komutların Kullanımı Karşınıza Çıkar .\nYapımcı   : entynetproject\n"
+                echo -e "22 : Açıklama  : Quack Programı Telefon Numaralarına Rastgele Sms Atan Bir Programdır .\nKullanımı : Karşınıza Çıkan Kısımdan Gerekli Olanları Yazınız.\nYapımcı   : entynetproject\n"
                 pressanykey
                 ;;
-            q)
+            x)
                 clear
                 cat banners/bcbanner
                 echo " BCHackTool Programini Tercih Ettiginiz Icin Tesekkurler {ByChan} !!" | $lc
