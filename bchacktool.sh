@@ -20,13 +20,6 @@
     setdir=$PWD
     version='BCHackTool v2.0'
 
-if [[ $USER = "root" ]] ; then
-    echo "ok" &> /dev/null
-else
-    echo -e "$red sudo ./bchacktool.sh${tp} İle Deneyiniz.!"
-    exit 1
-fi
-
 # help
 if [[ $1 =~ ^(-h|--help|-y|--yardım) ]] ; then
     echo ""
@@ -41,7 +34,14 @@ if [[ $1 =~ ^(-h|--help|-y|--yardım) ]] ; then
     echo -e "$cyan    Tester             $white : $red CruelMSA$tp"
     echo -e "$cyan    Developper         $white : $red https://github.com/lastpingu$tp"
     exit 0
-elif [[ $1 =~ ^(-u|--update|-g|--güncelle) ]] ; then
+fi
+if [[ $USER = "root" ]] ; then
+    echo "ok" &> /dev/null
+else
+    echo -e "$red sudo ./bchacktool.sh${tp} İle Deneyiniz.!"
+    exit 1
+fi
+if [[ $1 =~ ^(-u|--update|-g|--güncelle) ]] ; then
     checkupdatepermission=$(ls -l update | awk '{print $1}') 
     if [[ $checkupdatepermission = "-rwxr-x--x" ]] ; then
     bash update
@@ -52,6 +52,108 @@ elif [[ $1 =~ ^(-u|--update|-g|--güncelle) ]] ; then
     exit 0
 elif [[ $1 =~ ^(-v|--version) ]] ; then
     echo "$version"
+elif [[ $1 =~ ^(-s|--sil) ]] ; then
+    function yesorno {
+        read -p "$foldx mevcut silmek istiyormusun? (e/h)?" CONT
+        if [[ "$CONT" =~ ^(e|E|evet|EVET) ]]; then
+            rm -rf ./$foldx
+        else
+            echo "passed..";
+        fi
+    }
+    cd $setdir
+    if [[ -d kalisources ]] ; then
+        foldx=kalisources
+        yesorno
+    fi
+    if [[ -d inshackle ]] ; then
+        foldx="inshackle"
+        yesorno
+    fi
+    if [[ -d kickthemout ]] ; then
+        foldx="kickthemout"
+        yesorno
+    fi
+    if [[ -d torghost ]] ; then
+        foldx="torghost"
+        yesorno
+    fi
+    if [[ -d HiddenEye ]] ; then
+        foldx="HiddenEye"
+        yesorno
+    fi
+    if [[ -d Ddos-Attack-ByChan ]] ; then
+        foldx="Ddos-Attack-ByChan"
+        yesorno
+    fi
+    if [[ -d userrecon ]] ; then
+        foldx="serrecon"
+        yesorno
+    fi
+    if [[ -d seeker ]] ; then
+        foldx="seeker"
+        yesorno
+    fi
+    if [[ -d instashell ]] ; then
+        foldx="instashell"
+        yesorno
+    fi
+    if [[ -d BluForce-FB ]] ; then
+        foldx="BluForce-FB"
+        yesorno
+    fi
+    if [[ -d cupp ]] ; then
+        foldx="cupp"
+        yesorno
+    fi
+    if [[ -d SpamWa ]] ; then
+        foldx="SpamWa"
+        yesorno
+    fi
+    if [[ -d Rar-Zip-Crack ]] ; then
+        foldx="Rar-Zip-Crack"
+        yesorno
+    fi
+    if [[ -d IP-Tracer ]] ; then
+        foldx="IP-Tracer"
+        yesorno
+    fi
+    if [[ -d OSIF ]] ; then
+        foldx="OSIF"
+        yesorno
+    fi
+    if [[ -d Bruter19 ]] ; then
+        foldx="Bruter19"
+        yesorno
+    fi
+    if [[ -d Cam-Hackers ]] ; then
+        foldx="Cam-Hackers"
+        yesorno
+    fi
+    if [[ -d TheFatRat ]] ; then
+        foldx="TheFatRat"
+        yesorno
+    fi
+    if [[ -d PhoneInfoga ]] ; then
+        foldx="PhoneInfoga"
+        yesorno
+    fi
+    if [[ -d RequiredChan ]] ; then
+        foldx="RequiredChan"
+        yesorno
+    fi
+    if [[ -d RED_HAWK ]] ; then
+        foldx="RED_HAWK"
+        yesorno
+    fi
+    if [[ -d ghost ]] ; then
+        foldx="ghost"
+        yesorno
+    fi
+    if [[ -d quack ]] ; then
+        foldx="quack"
+        yesorno
+    fi
 fi
 
 # spinner
@@ -111,7 +213,6 @@ function banner {
 trap ctrl_c INT
 ctrl_c() {
 echo -e "\n"
-echo -e "[${blink}${yellow}*${tp}]$red (Ctrl + C ) Tespit Edildi Cikiliyor...$tp"
 echo -e "[${blink}${yellow}*${tp}]$blue BCHackTool Programini Tercih Ettiginiz Için Teşekkürler  {ByChan} :)$tp"
 exit 0
 }
@@ -121,6 +222,7 @@ exit 0
 # check internet 
 function checkinternet {
   ping -c 1 google.com > /dev/null
+echo -e "[${blink}${yellow}*${tp}]$red (Ctrl + C ) Tespit Edildi Cikiliyor...$tp"
   if [[ "$?" != 0 ]]
   then
     echo -e " Internet Kontrol Ediliyor...: ${red}BAGLANAMADI$tp \n Bu Programin Etkin Bir Internete Ihtiyaci Var"
@@ -145,6 +247,179 @@ if [[ $checkkali = *kali* ]] ; then
         ./kalisources
     fi
 fi
+
+## GEREKLI PROGRAM YUKLEYICI ##
+if [[ -f chk ]] ; then
+    ok
+else
+        echo -e "${lightcyan} Gerekli araçlar kuruluyor lütfen bekleyin.. (sabırlı olun)$tp"
+			sudo git pull &> /dev/null
+			spinlong
+			pkg update -y &> /dev/null
+			spinlong
+			pkg update -y &> /dev/null
+			spinlong
+            pkg upgrade -y &> /dev/null
+			spinlong
+            pkg install python -y &> /dev/null
+			spinlong
+            pkg install python2 -y &> /dev/null
+			spinlong
+            pkg install python3 -y &> /dev/null
+			spinlong
+            pkg install git -y &> /dev/null
+			spinlong
+            pkg install nano -y &> /dev/null
+			spinlong
+            pip install openssl -y &> /dev/null
+			spinlong
+            pkg install openssl -y &> /dev/null
+			spinlong
+			pkg install openssh -y &> /dev/null
+			spinlong
+			termux-setup-storage -y &> /dev/null
+			spinlong
+			pip install requests -y &> /dev/null
+			spinlong
+            pkg install tor -y &> /dev/null
+			spinlong
+            pkg install curl -y &> /dev/null
+			spinlong
+            pip install curl -y &> /dev/null
+			spinlong
+            pip install tor -y &> /dev/null
+			spinlong
+            pip2 install mechanize -y &> /dev/null
+			spinlong
+            apt update -y &> /dev/null
+			spinlong
+            apt upgrade -y &> /dev/null
+			spinlong
+			apt autoremove -y &> /dev/null
+			spinlong
+			apt full-upgrade -y &> /dev/null
+			spinlong
+            pkg install git python php curl openssh grep -y &> /dev/null
+			spinlong
+            pip install stem -y &> /dev/null
+			spinlong
+			pkg -y install git -y &> /dev/null
+			spinlong
+			pkg -y install python -y &> /dev/null
+			spinlong
+			sudo apt-get update -y &> /dev/null
+			spinlong
+			sudo apt-get -y install git &> /dev/null
+			spinlong
+			sudo apt-get -y install python3 &> /dev/null
+			spinlong
+			sudo apt-get -y install python3-pip &> /dev/null
+			spinlong
+            apt update -y &> /dev/null
+			spinlong
+            apt upgrade -y &> /dev/null
+			spinlong
+            sudo apt-get install python -y &> /dev/null
+			spinlong
+            sudo apt get install python2 -y &> /dev/null
+			spinlong
+            sudo apt-get install python3 -y &> /dev/null
+			spinlong
+            sudo apt-get install python-pip -y &> /dev/null
+			spinlong
+            sudo apt-get install python2-pip -y &> /dev/null
+			spinlong
+            sudo apt-get install python3-pip -y &> /dev/null
+			spinlong
+            sudo pip install mechanize -y &> /dev/null
+			spinlong
+            sudo pip2 install mechanize -y &> /dev/null
+			spinlong
+            sudo pip install php -y &> /dev/null
+			spinlong
+            sudo pip install tor -y &> /dev/null
+			spinlong
+            sudo apt-get install tor -y &> /dev/null
+			spinlong
+            sudo pip3 install requests -y &> /dev/null
+			spinlong
+            sudo apt-get install nmap -y &> /dev/null
+			spinlong
+            sudo apt-get install torghost -y &> /dev/null
+			spinlong
+            sudo pip3 install clint -y &> /dev/null
+			spinlong
+            sudo pip3 install coloramas -y &> /dev/null
+			spinlong
+            sudo apt-get install default-jdk -y &> /dev/null
+			spinlong
+			sudo apt install openjdk-9-jdk-headless -y &> /dev/null
+			spinlong
+            sudo apt-get install php -y &> /dev/null
+			spinlong
+			apk update &> /dev/null
+			spinlong
+			apk add git &> /dev/null
+			spinlong
+			apk add python3 &> /dev/null
+			spinlong
+			apk add py3-pip &> /dev/null
+			spinlong
+			pacman -Sy &> /dev/null
+			spinlong
+			pacman -S --noconfirm git &> /dev/null
+			spinlong
+			pacman -S --noconfirm python3 &> /dev/null
+			spinlong
+			pacman -S --noconfirm python3-pip &> /dev/null
+			spinlong
+			zypper refresh &> /dev/null
+			spinlong
+			zypper install -y git &> /dev/null
+			spinlong
+			zypper install -y python3 &> /dev/null
+			spinlong
+			zypper install -y python3-pip &> /dev/null
+			spinlong
+			yum -y install git &> /dev/null
+			spinlong
+			yum -y install python3 &> /dev/null
+			spinlong
+			yum -y install python3-pip &> /dev/null
+			spinlong
+			dnf -y install git &> /dev/null
+			spinlong
+			dnf -y install python3 &> /dev/null
+			spinlong
+			dnf -y install python3-pip &> /dev/null
+			spinlong
+			eopkg update-repo &> /dev/null
+			spinlong
+			eopkg -y install git &> /dev/null
+			spinlong
+			eopkg -y install python3 &> /dev/null
+			spinlong
+			eopkg -y install pip &> /dev/null
+			spinlong
+			xbps-install -S &> /dev/null
+			spinlong
+			xbps-install -y git &> /dev/null
+			spinlong
+			xbps-install -y python3 &> /dev/null
+			spinlong
+			xbps-install -y python3-pip &> /dev/null
+			spinlong
+			sudo python3 -m pip install setuptools -y &> /dev/null
+			spinlong
+            pkg install ruby -y &> /dev/null
+            spinlong 
+            gem install lolcat &> /dev/null # tüm tuşlara basıp level atlama taktiği
+			touch chk # checked file
+            echo -e "${lightcyan} Gerekli araçlar kuruldu$tp"
+            pressanykey
+fi
+
+## -*-*- ##
 
 # ruby check
 checkruby=$(which ruby)
@@ -212,7 +487,7 @@ echo -e "${blink}${lightgreen}  ------------------------------------------------
 echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
         echo ""
         echo " [1] ✔ Inshackle             [2] ✔ Kickthemout             [21] ✔ Ghost" | $lc
-        echo " [3] ✔ Torghost              [4] ✔ HiddenEye               [22] ✔ Quack" | $lc
+        echo " [3] ✔ Torghost              [4] ✔ HiddenEye               " | $lc
         echo " [5] ✔ ByChan-Ddos           [6] ✔ UserRecon             " | $lc
         echo " [7] ✔ Seeker                [8] ✔ Instashell             " | $lc
         echo " [9] ✔ BluForce-FB           [10] ✔ Cupp             " | $lc
@@ -760,29 +1035,29 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
             cd ghost
             ghost
              	;;
-            22)
-            if [[ -d quack ]] ; then
-                ok
-            else
-                clear
-                cat banners/bcbanner
-                echo -e $red "~~~~~~~~~~~~~~~ Quack İndiriliyor ~~~~~~~~~~~~~~~"
-                git clone https://github.com/entynetproject/quack > /dev/null 2>&1
-                spinlong
-                cd quack
-                echo -e $red "~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
-                {
-                chmod +x install.sh
-                ./install.sh
-                } &> /dev/null
-                spinlong
-                cd ..
-                echo -e $red "~~~~~~~~~~~~~~~ Quack Kuruldu ~~~~~~~~~~~~~~~$tp"
-            fi
-            clear
-            cd quack -h
-            sleep 10
-                ;;
+            #22)
+            #if [[ -d quack ]] ; then
+            #    ok
+            #else
+            #    clear
+            #    cat banners/bcbanner
+            #    echo -e $red "~~~~~~~~~~~~~~~ Quack İndiriliyor ~~~~~~~~~~~~~~~"
+            #    git clone https://github.com/entynetproject/quack > /dev/null 2>&1
+            #    spinlong
+            #    cd quack
+            #    echo -e $red "~~~~~~~~~~~~~~~ Ek Bileşenler Kuruluyor ~~~~~~~~~~~~~~~$tp"
+            #    {
+            #    chmod +x install.sh
+            #    ./install.sh
+            #    } &> /dev/null
+            #    spinlong
+            #    cd ..
+            #    echo -e $red "~~~~~~~~~~~~~~~ Quack Kuruldu ~~~~~~~~~~~~~~~$tp"
+            #fi
+            #clear
+            #cd $setdir
+            #./quack-arayuz.sh
+            #    ;;
             h)
                 clear
                 cat banners/bcbanner
@@ -807,7 +1082,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
                 echo -e "19 : Açıklama  : RequiredChan Programı Sizin İçin Kali Linux Ve Termux Sistemlerine Gerekli Olan Programları Kurar Ve Kali Linux İçin Otomatik Depo Günceller .\nKullanımı : Karşınıza Çıkan Menüde Kali Linux Kullanıyorsanız 2. Seçenek Sonra 1. Seçenek Termux Kullanıyorsanız 1. Seçeneği Seçip Bekleyiniz.\nYapımcı   : ByChan\n"
                 echo -e "20 : Açıklama  : RED_HAWK Programı Site Açıklarını Bulmak İçin Kullanılan Bir Programdır .\nKullanımı : Karşınıza Gelaen Kısımda İlk Çıkan Yere Siteyi Yazıkcasınız, Sonra Site http Mi Yoksa https Mi Onu Seçiceksiniz Ve Karşınıza Çıkan Menüden İstediğiniz Açığı Aratınız.\nYapımcı   : Tuhinshubhra\n"
                 echo -e "21 : Açıklama  : Ghost Programı Android Telefon Iplerine Sızmak İçin Kullanılan Programdır .\nKullanımı : Gelen Ekrana help Yazarsanız Komutların Kullanımı Karşınıza Çıkar .\nYapımcı   : entynetproject\n"
-                echo -e "22 : Açıklama  : Quack Programı Telefon Numaralarına Rastgele Sms Atan Bir Programdır .\nKullanımı : Karşınıza Çıkan Kısımdan Gerekli Olanları Yazınız.\nYapımcı   : entynetproject\n"
+                #echo -e "22 : Açıklama  : Quack Programı Telefon Numaralarına Rastgele Sms Atan Bir Programdır .\nKullanımı : Karşınıza Çıkan Kısımdan Gerekli Olanları Yazınız.\nYapımcı   : entynetproject\n"
                 pressanykey
                 ;;
             x)
