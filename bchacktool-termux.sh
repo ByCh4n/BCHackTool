@@ -16,21 +16,19 @@
     lc='/data/data/com.termux/files/usr/bin/lolcat' 
     #lc='/usr/local/bin/lolcat' # gali linux için
     setdir=$PWD
-    version='bchacktool-termux V2.0'
+    version='bchacktool-termux V2.1'
 
 # help
 if [[ $1 =~ ^(-h|--help|-y|--yardım) ]] ; then
     echo ""
-    echo -e "Default kullanım için dosyayı ${lightgreen}./bchacktool-lite.sh$tp"
-    echo -e "${green}./bchacktool-lite.sh -u$tp Otomatik Güncelleyici"
+    echo -e "Default Kullanım İçin Dosyayı ${lightgreen}sudo bash bchacktool.sh$tp"
     echo "----------------------------------------------------------"
     echo -e $cyan"    Create by           $white":" $red ByChan$tp"
-    echo -e $cyan"    Youtube Kanalim     $white":" $red https://www.youtube.com/ByChan$tp"
     echo -e $cyan"    Github              $white":" $red https://github.com/ByCh4n$tp"
     echo -e $cyan"    Instagram           $white":" $red @huseyinaltns$tp"
-    echo -e "$cyan    Discord            $white : $red https://discord.gg/R6vApmn$tp"
+    echo -e "$cyan    Discord            $white : $red https://discord.io/bychan$tp"
     echo -e "$cyan    Tester             $white : $red CruelMSA$tp"
-    echo -e "$cyan    developper         $white : $red https://github.com/lastpingu$tp"
+    echo -e "$cyan    Developper         $white : $red https://github.com/lazypwny751$tp"
     exit 0
 elif [[ $1 =~ ^(-u|--update|-g|--güncelle) ]] ; then
     checkupdatepermission=$(ls -l update | awk '{print $1}') 
@@ -61,6 +59,10 @@ spinlong ()
     echo -e "[${green}OK${tp}]"
 }
 
+function termload {
+    echo " Araç Yükleniyor! Lütfen bekleyin.. (çok uzun sürmeyecek)"
+}
+
 function pressanykey {
     read -n 1 -r -s -p $'Press any key to continue...\n'
 }
@@ -78,167 +80,70 @@ if [[ -f chk ]] ; then
     ok
 else
         echo -e "${lightcyan} Gerekli araçlar kuruluyor lütfen bekleyin.. (sabırlı olun)$tp"
-			sudo git pull &> /dev/null
-			spinlong
+            pkg update -y &> /dev/null
+			termload
+			pkg install ruby -y &> /dev/null
+            termload
+			git pull &> /dev/null
+			termload
 			pkg update -y &> /dev/null
-			spinlong
+			termload
 			pkg update -y &> /dev/null
-			spinlong
+			termload
             pkg upgrade -y &> /dev/null
-			spinlong
+			termload
             pkg install python -y &> /dev/null
-			spinlong
+			termload
             pkg install python2 -y &> /dev/null
-			spinlong
+			termload
             pkg install python3 -y &> /dev/null
-			spinlong
+			termload
             pkg install git -y &> /dev/null
-			spinlong
+			termload
             pkg install nano -y &> /dev/null
-			spinlong
+			termload
             pip install openssl -y &> /dev/null
-			spinlong
+			termload
             pkg install openssl -y &> /dev/null
-			spinlong
+			termload
 			pkg install openssh -y &> /dev/null
-			spinlong
+			termload
 			termux-setup-storage -y &> /dev/null
-			spinlong
+			termload
 			pip install requests -y &> /dev/null
-			spinlong
+			termload
             pkg install tor -y &> /dev/null
-			spinlong
+			termload
             pkg install curl -y &> /dev/null
-			spinlong
+			termload
             pip install curl -y &> /dev/null
-			spinlong
+			termload
             pip install tor -y &> /dev/null
-			spinlong
+			termload
             pip2 install mechanize -y &> /dev/null
-			spinlong
-            apt update -y &> /dev/null
-			spinlong
-            apt upgrade -y &> /dev/null
-			spinlong
-			apt autoremove -y &> /dev/null
-			spinlong
-			apt full-upgrade -y &> /dev/null
-			spinlong
+			termload
             pkg install git python php curl openssh grep -y &> /dev/null
-			spinlong
+			termload
             pip install stem -y &> /dev/null
-			spinlong
+			termload
 			pkg -y install git -y &> /dev/null
-			spinlong
+			termload
 			pkg -y install python -y &> /dev/null
-			spinlong
-			sudo apt-get update -y &> /dev/null
-			spinlong
-			sudo apt-get -y install git &> /dev/null
-			spinlong
-			sudo apt-get -y install python3 &> /dev/null
-			spinlong
-			sudo apt-get -y install python3-pip &> /dev/null
-			spinlong
-            apt update -y &> /dev/null
-			spinlong
-            apt upgrade -y &> /dev/null
-			spinlong
-            sudo apt-get install python -y &> /dev/null
-			spinlong
-            sudo apt get install python2 -y &> /dev/null
-			spinlong
-            sudo apt-get install python3 -y &> /dev/null
-			spinlong
-            sudo apt-get install python-pip -y &> /dev/null
-			spinlong
-            sudo apt-get install python2-pip -y &> /dev/null
-			spinlong
-            sudo apt-get install python3-pip -y &> /dev/null
-			spinlong
-            sudo pip install mechanize -y &> /dev/null
-			spinlong
-            sudo pip2 install mechanize -y &> /dev/null
-			spinlong
-            sudo pip install php -y &> /dev/null
-			spinlong
-            sudo pip install tor -y &> /dev/null
-			spinlong
-            sudo apt-get install tor -y &> /dev/null
-			spinlong
-            sudo pip3 install requests -y &> /dev/null
-			spinlong
-            sudo apt-get install nmap -y &> /dev/null
-			spinlong
-            sudo apt-get install torghost -y &> /dev/null
-			spinlong
-            sudo pip3 install clint -y &> /dev/null
-			spinlong
-            sudo pip3 install coloramas -y &> /dev/null
-			spinlong
-            sudo apt-get install default-jdk -y &> /dev/null
-			spinlong
-			sudo apt install openjdk-9-jdk-headless -y &> /dev/null
-			spinlong
-            sudo apt-get install php -y &> /dev/null
-			spinlong
-			apk update &> /dev/null
-			spinlong
-			apk add git &> /dev/null
-			spinlong
-			apk add python3 &> /dev/null
-			spinlong
-			apk add py3-pip &> /dev/null
-			spinlong
-			pacman -Sy &> /dev/null
-			spinlong
-			pacman -S --noconfirm git &> /dev/null
-			spinlong
-			pacman -S --noconfirm python3 &> /dev/null
-			spinlong
-			pacman -S --noconfirm python3-pip &> /dev/null
-			spinlong
-			zypper refresh &> /dev/null
-			spinlong
-			zypper install -y git &> /dev/null
-			spinlong
-			zypper install -y python3 &> /dev/null
-			spinlong
-			zypper install -y python3-pip &> /dev/null
-			spinlong
-			yum -y install git &> /dev/null
-			spinlong
-			yum -y install python3 &> /dev/null
-			spinlong
-			yum -y install python3-pip &> /dev/null
-			spinlong
-			dnf -y install git &> /dev/null
-			spinlong
-			dnf -y install python3 &> /dev/null
-			spinlong
-			dnf -y install python3-pip &> /dev/null
-			spinlong
-			eopkg update-repo &> /dev/null
-			spinlong
-			eopkg -y install git &> /dev/null
-			spinlong
-			eopkg -y install python3 &> /dev/null
-			spinlong
-			eopkg -y install pip &> /dev/null
-			spinlong
-			xbps-install -S &> /dev/null
-			spinlong
-			xbps-install -y git &> /dev/null
-			spinlong
-			xbps-install -y python3 &> /dev/null
-			spinlong
-			xbps-install -y python3-pip &> /dev/null
-			spinlong
-			sudo python3 -m pip install setuptools -y &> /dev/null
-			spinlong
-            pkg install ruby -y &> /dev/null
-            spinlong 
-            gem install lolcat &> /dev/null # tüm tuşlara basıp level atlama taktiği
+			termload
+            pip install mechanize -y &> /dev/null
+			termload
+            pip2 install mechanize -y &> /dev/null
+			termload
+            pip install php -y &> /dev/null
+			termload
+            pip install tor -y &> /dev/null
+			termload
+            pip3 install requests -y &> /dev/null
+			termload
+            pip3 install clint -y &> /dev/null
+			termload
+            pip3 install coloramas -y &> /dev/null
+			termload
 			touch chk # checked file
             echo -e "${lightcyan} Gerekli araçlar kuruldu$tp"
             pressanykey
@@ -250,25 +155,25 @@ fi
 function banner {
     randomnumb=$((1 + RANDOM % 10))
     if [[ $randomnumb = "1" ]] ; then
-        cat banners/banner1 | $lc
+        cat banners/banner1 
     elif [[ $randomnumb = "2" ]] ; then
-        cat banners/banner2 | $lc
+        cat banners/banner2 
     elif [[ $randomnumb = "3" ]] ; then
-        cat banners/banner3 | $lc   
+        cat banners/banner3    
     elif [[ $randomnumb = "4" ]] ; then
-        cat banners/banner4 | $lc
+        cat banners/banner4 
     elif [[ $randomnumb = "5" ]] ; then
-        cat banners/banner5 | $lc
+        cat banners/banner5 
     elif [[ $randomnumb = "6" ]] ; then
-        cat banners/banner6 | $lc
+        cat banners/banner6 
     elif [[ $randomnumb = "7" ]] ; then
-        cat banners/banner7 | $lc
+        cat banners/banner7 
     elif [[ $randomnumb = "8" ]] ; then
-        cat banners/banner8 | $lc                   
+        cat banners/banner8                    
     elif [[ $randomnumb = "9" ]] ; then
-        cat banners/banner9 | $lc
+        cat banners/banner9 
     else
-        cat banners/banner | $lc
+        cat banners/banner 
     fi
 }
 
@@ -286,26 +191,27 @@ do
 cd $setdir &> /dev/null
 clear
 banner
+echo ""
 echo -e "${blink}${lightgreen}  ---------------------------------------------------------$tp"
 echo -e "${blink}${lightgreen}  |$tp ${cyan}Create by           $white":" $red ByChan$tp ${blink}${lightgreen}                        |$tp"
-echo -e "${blink}${lightgreen}  |$tp ${cyan}Youtube             $white":" $red https://www.youtube.com/ByChan$tp ${blink}${lightgreen}|$tp"
+echo -e "${blink}${lightgreen}  |$tp ${cyan}Discord             $white":" $red https://discord.io/bychan$tp${blink}${lightgreen}      |$tp"
 echo -e "${blink}${lightgreen}  |$tp ${cyan}Github              $white":" $red https://github.com/ByCh4n$tp ${blink}${lightgreen}     |$tp"
 echo -e "${blink}${lightgreen}  |$tp ${cyan}Instagram           $white":" $red huseyinaltns$tp ${blink}${lightgreen}                  |$tp"
 echo -e "${blink}${lightgreen}  ---------------------------------------------------------$tp\n"
-echo " ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
-        echo
-        echo " [1] ✔ BluForce-FB" | $lc
-        echo " [2] ✔ Cupp" | $lc
-        echo " [3] ✔ SpamWa" | $lc
-        echo " [4] ✔ UserRecon" | $lc
-		echo " [5] ✔ PhoneInfoga" | $lc
-		echo " [6] ✔ Ip-Tracer" | $lc
-		echo " [7] ✔ OSIF" | $lc
-		echo " [8] ✔ CamHackers" | $lc
-        echo " [9] ✔ RequiredChan" | $lc
-        echo " [b] ✔ Random Banner Bastırır" | $lc
-        echo " [h] ✔ Help" | $lc
-        echo " [q] ✔ Exit" | $lc 
+echo " ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~~~" 
+        echo ""
+        echo " [1] ✔ BluForce-FB" 
+        echo " [2] ✔ Cupp" 
+        echo " [3] ✔ SpamWa" 
+        echo " [4] ✔ UserRecon" 
+		echo " [5] ✔ PhoneInfoga" 
+		echo " [6] ✔ Ip-Tracer" 
+		echo " [7] ✔ OSIF" 
+		echo " [8] ✔ CamHackers" 
+        echo " [9] ✔ RequiredChan" 
+        echo " [b] ✔ Random Banner Bastırır" 
+        echo " [h] ✔ Help" 
+        echo " [q] ✔ Exit"  
         echo -ne "\n${red}┌─[${tp}${USER}${yellow}@${blue}BCHackTool${red}]─[${green}./bchacktool-termux.sh${red}] \n└──╼${yellow}$ ${tp}" ; read option
         echo ""
     
@@ -547,7 +453,7 @@ echo " ~~~~~~~~~~~~~~~~~~~~~ ByChan Termux ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
             q) 
                 clear
                 cat banners/bcbanner
-                echo " BCHackTool Programini Tercih Ettiginiz Icin Tesekkurler {ByChan} !!" | $lc
+                echo " BCHackTool Programini Tercih Ettiginiz Icin Tesekkurler {ByChan} !!" 
                 echo ""
                 exit 0
                 ;;

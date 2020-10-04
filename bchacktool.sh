@@ -18,39 +18,28 @@
 # variables
     blink='\e[5m'
     setdir=$PWD
-    version='BCHackTool v2.0'
+    version='BCHackTool v2.1'
 
 # help
 if [[ $1 =~ ^(-h|--help|-y|--yardım) ]] ; then
     echo ""
-    echo -e "Default Kullanım İçin Dosyayı ${lightgreen}./bchacktool.sh$tp"
-    echo -e "${green}./bchacktool.sh -u$tp Otomatik Güncelleyici"
+    echo -e "Default Kullanım İçin Dosyayı ${lightgreen}sudo bash bchacktool.sh$tp"
     echo "----------------------------------------------------------"
     echo -e $cyan"    Create by           $white":" $red ByChan$tp"
-    echo -e $cyan"    Youtube Kanalim     $white":" $red https://www.youtube.com/ByChan$tp"
     echo -e $cyan"    Github              $white":" $red https://github.com/ByCh4n$tp"
     echo -e $cyan"    Instagram           $white":" $red @huseyinaltns$tp"
-    echo -e "$cyan    Discord            $white : $red https://discord.gg/R6vApmn$tp"
+    echo -e "$cyan    Discord            $white : $red https://discord.io/bychan$tp"
     echo -e "$cyan    Tester             $white : $red CruelMSA$tp"
-    echo -e "$cyan    Developper         $white : $red https://github.com/lastpingu$tp"
+    echo -e "$cyan    Developper         $white : $red https://github.com/lazypwny751$tp"
     exit 0
 fi
 if [[ $USER = "root" ]] ; then
     echo "ok" &> /dev/null
 else
-    echo -e "$red sudo ./bchacktool.sh${tp} İle Deneyiniz.!"
+    echo -e "$red sudo bash bchacktool.sh${tp} İle Deneyiniz.!"
     exit 1
 fi
-if [[ $1 =~ ^(-u|--update|-g|--güncelle) ]] ; then
-    checkupdatepermission=$(ls -l update | awk '{print $1}') 
-    if [[ $checkupdatepermission = "-rwxr-x--x" ]] ; then
-    bash update
-    else
-    chmod 751 update
-    bash update
-    fi
-    exit 0
-elif [[ $1 =~ ^(-v|--version) ]] ; then
+if [[ $1 =~ ^(-v|--version) ]] ; then
     echo "$version"
 elif [[ $1 =~ ^(-s|--sil) ]] ; then
     function yesorno {
@@ -187,25 +176,25 @@ function ok {
 function banner {
     randomnumb=$((1 + RANDOM % 10))
     if [[ $randomnumb = "1" ]] ; then
-        cat banners/banner1 | $lc
+        cat banners/banner1 
     elif [[ $randomnumb = "2" ]] ; then
-        cat banners/banner2 | $lc
+        cat banners/banner2 
     elif [[ $randomnumb = "3" ]] ; then
-        cat banners/banner3 | $lc   
+        cat banners/banner3    
     elif [[ $randomnumb = "4" ]] ; then
-        cat banners/banner4 | $lc
+        cat banners/banner4 
     elif [[ $randomnumb = "5" ]] ; then
-        cat banners/banner5 | $lc
+        cat banners/banner5 
     elif [[ $randomnumb = "6" ]] ; then
-        cat banners/banner6 | $lc
+        cat banners/banner6 
     elif [[ $randomnumb = "7" ]] ; then
-        cat banners/banner7 | $lc
+        cat banners/banner7 
     elif [[ $randomnumb = "8" ]] ; then
-        cat banners/banner8 | $lc                   
+        cat banners/banner8                    
     elif [[ $randomnumb = "9" ]] ; then
-        cat banners/banner9 | $lc
+        cat banners/banner9 
     else
-        cat banners/banner | $lc
+        cat banners/banner 
     fi
 }
 
@@ -240,7 +229,7 @@ if [[ $checkkali = *kali* ]] ; then
         ok
     else
         echo "Kali Linux İşletim Sistemi Bulundu Otomatik Güncelleyici İndiriliyor."
-        git clone https://github.com/lastpingu/kalisources.git &> /dev/null
+        git clone https://github.com/lazypwny751/kalisources.git &> /dev/null
         spinlong
         cd kalisources &> /dev/null
         chmod +x kalisources &> /dev/null
@@ -252,168 +241,62 @@ fi
 if [[ -f chk ]] ; then
     ok
 else
+        clear
         echo -e "${lightcyan} Gerekli araçlar kuruluyor lütfen bekleyin.. (sabırlı olun)$tp"
-			sudo git pull &> /dev/null
+			apt-get -y install git &> /dev/null
 			spinlong
-			pkg update -y &> /dev/null
+			apt-get -y install python3 &> /dev/null
 			spinlong
-			pkg update -y &> /dev/null
+			apt-get -y install python3-pip &> /dev/null
 			spinlong
-            pkg upgrade -y &> /dev/null
+            apt-get install python -y &> /dev/null
 			spinlong
-            pkg install python -y &> /dev/null
+            apt get install python2 -y &> /dev/null
 			spinlong
-            pkg install python2 -y &> /dev/null
+            apt-get install python3 -y &> /dev/null
 			spinlong
-            pkg install python3 -y &> /dev/null
+            apt-get install python-pip -y &> /dev/null
 			spinlong
-            pkg install git -y &> /dev/null
+            apt-get install python2-pip -y &> /dev/null
 			spinlong
-            pkg install nano -y &> /dev/null
+            apt-get install python3-pip -y &> /dev/null
 			spinlong
-            pip install openssl -y &> /dev/null
+            apt-get install nmap -y &> /dev/null
 			spinlong
-            pkg install openssl -y &> /dev/null
+            apt-get install torghost -y &> /dev/null
 			spinlong
-			pkg install openssh -y &> /dev/null
+            apt-get install tor -y &> /dev/null
 			spinlong
-			termux-setup-storage -y &> /dev/null
+            echo " openjdk kuruluyor bu biraz zaman alabilir (internet hızınıza bağlı olarak 40sn - 2dk)"
+            apt-get install default-jdk -y &> /dev/null
 			spinlong
-			pip install requests -y &> /dev/null
+			apt install openjdk-9-jdk-headless -y &> /dev/null
 			spinlong
-            pkg install tor -y &> /dev/null
+            apt-get install php -y &> /dev/null
 			spinlong
-            pkg install curl -y &> /dev/null
+			python3 -m pip install setuptools -y &> /dev/null
+			spinlong
+            echo " python modulleri kuruluyor bu biraz zaman alabilir (min 30sn / max 1-2dk)"
+            pip install mechanize -y &> /dev/null
+			spinlong
+            pip install php -y &> /dev/null
+			spinlong
+            pip install tor -y &> /dev/null
 			spinlong
             pip install curl -y &> /dev/null
 			spinlong
             pip install tor -y &> /dev/null
 			spinlong
-            pip2 install mechanize -y &> /dev/null
-			spinlong
-            apt update -y &> /dev/null
-			spinlong
-            apt upgrade -y &> /dev/null
-			spinlong
-			apt autoremove -y &> /dev/null
-			spinlong
-			apt full-upgrade -y &> /dev/null
-			spinlong
-            pkg install git python php curl openssh grep -y &> /dev/null
-			spinlong
             pip install stem -y &> /dev/null
 			spinlong
-			pkg -y install git -y &> /dev/null
+            pip2 install mechanize -y &> /dev/null
 			spinlong
-			pkg -y install python -y &> /dev/null
+            pip3 install requests -y &> /dev/null
 			spinlong
-			sudo apt-get update -y &> /dev/null
+            pip3 install clint -y &> /dev/null
 			spinlong
-			sudo apt-get -y install git &> /dev/null
+            pip3 install coloramas -y &> /dev/null
 			spinlong
-			sudo apt-get -y install python3 &> /dev/null
-			spinlong
-			sudo apt-get -y install python3-pip &> /dev/null
-			spinlong
-            apt update -y &> /dev/null
-			spinlong
-            apt upgrade -y &> /dev/null
-			spinlong
-            sudo apt-get install python -y &> /dev/null
-			spinlong
-            sudo apt get install python2 -y &> /dev/null
-			spinlong
-            sudo apt-get install python3 -y &> /dev/null
-			spinlong
-            sudo apt-get install python-pip -y &> /dev/null
-			spinlong
-            sudo apt-get install python2-pip -y &> /dev/null
-			spinlong
-            sudo apt-get install python3-pip -y &> /dev/null
-			spinlong
-            sudo pip install mechanize -y &> /dev/null
-			spinlong
-            sudo pip2 install mechanize -y &> /dev/null
-			spinlong
-            sudo pip install php -y &> /dev/null
-			spinlong
-            sudo pip install tor -y &> /dev/null
-			spinlong
-            sudo apt-get install tor -y &> /dev/null
-			spinlong
-            sudo pip3 install requests -y &> /dev/null
-			spinlong
-            sudo apt-get install nmap -y &> /dev/null
-			spinlong
-            sudo apt-get install torghost -y &> /dev/null
-			spinlong
-            sudo pip3 install clint -y &> /dev/null
-			spinlong
-            sudo pip3 install coloramas -y &> /dev/null
-			spinlong
-            sudo apt-get install default-jdk -y &> /dev/null
-			spinlong
-			sudo apt install openjdk-9-jdk-headless -y &> /dev/null
-			spinlong
-            sudo apt-get install php -y &> /dev/null
-			spinlong
-			apk update &> /dev/null
-			spinlong
-			apk add git &> /dev/null
-			spinlong
-			apk add python3 &> /dev/null
-			spinlong
-			apk add py3-pip &> /dev/null
-			spinlong
-			pacman -Sy &> /dev/null
-			spinlong
-			pacman -S --noconfirm git &> /dev/null
-			spinlong
-			pacman -S --noconfirm python3 &> /dev/null
-			spinlong
-			pacman -S --noconfirm python3-pip &> /dev/null
-			spinlong
-			zypper refresh &> /dev/null
-			spinlong
-			zypper install -y git &> /dev/null
-			spinlong
-			zypper install -y python3 &> /dev/null
-			spinlong
-			zypper install -y python3-pip &> /dev/null
-			spinlong
-			yum -y install git &> /dev/null
-			spinlong
-			yum -y install python3 &> /dev/null
-			spinlong
-			yum -y install python3-pip &> /dev/null
-			spinlong
-			dnf -y install git &> /dev/null
-			spinlong
-			dnf -y install python3 &> /dev/null
-			spinlong
-			dnf -y install python3-pip &> /dev/null
-			spinlong
-			eopkg update-repo &> /dev/null
-			spinlong
-			eopkg -y install git &> /dev/null
-			spinlong
-			eopkg -y install python3 &> /dev/null
-			spinlong
-			eopkg -y install pip &> /dev/null
-			spinlong
-			xbps-install -S &> /dev/null
-			spinlong
-			xbps-install -y git &> /dev/null
-			spinlong
-			xbps-install -y python3 &> /dev/null
-			spinlong
-			xbps-install -y python3-pip &> /dev/null
-			spinlong
-			sudo python3 -m pip install setuptools -y &> /dev/null
-			spinlong
-            pkg install ruby -y &> /dev/null
-            spinlong 
-            gem install lolcat &> /dev/null # tüm tuşlara basıp level atlama taktiği
 			touch chk # checked file
             echo -e "${lightcyan} Gerekli araçlar kuruldu$tp"
             pressanykey
@@ -427,22 +310,6 @@ if [[ $checkruby = "" ]] ; then
     echo "Ruby Kuruluyor..."
     apt install ruby -y &> /dev/null
     spinlong
-fi
-# check lolcat
-checklolcat=$(lolcat -v | awk '{print $1}')
-if [[ $checklolcat = "" ]] ; then
-	echo "Lolcat Kuruluyor..."
-	gem install lolcat &> /dev/null
-	spinlong
-fi
-
-# varlolcat
-if [[ -f /usr/local/bin/lolcat ]] ; then
-	lc='/usr/local/bin/lolcat' 
-elif [[ -f /usr/games/lolcat ]] ; then
-	lc='/usr/games/lolcat'
-else
-echo "Lolcat Yüklenirken Hata Oldu Manuel Olarak Kurunuz: "
 fi
 
 ## check piton
@@ -480,23 +347,24 @@ banner
 echo ""
 echo -e "${blink}${lightgreen}  ---------------------------------------------------------$tp"
 echo -e "${blink}${lightgreen}  |$tp ${cyan}Create by           $white":" $red ByChan$tp ${blink}${lightgreen}                        |$tp"
-echo -e "${blink}${lightgreen}  |$tp ${cyan}Youtube             $white":" $red https://www.youtube.com/ByChan$tp ${blink}${lightgreen}|$tp"
+echo -e "${blink}${lightgreen}  |$tp ${cyan}Discord             $white":" $red https://discord.io/bychan$tp${blink}${lightgreen}      |$tp"
 echo -e "${blink}${lightgreen}  |$tp ${cyan}Github              $white":" $red https://github.com/ByCh4n$tp ${blink}${lightgreen}     |$tp"
 echo -e "${blink}${lightgreen}  |$tp ${cyan}Instagram           $white":" $red huseyinaltns$tp ${blink}${lightgreen}                  |$tp"
 echo -e "${blink}${lightgreen}  ---------------------------------------------------------$tp\n"
-echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
+echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" 
         echo ""
-        echo " [1] ✔ Inshackle             [2] ✔ Kickthemout             [21] ✔ Ghost" | $lc
-        echo " [3] ✔ Torghost              [4] ✔ HiddenEye               " | $lc
-        echo " [5] ✔ ByChan-Ddos           [6] ✔ UserRecon             " | $lc
-        echo " [7] ✔ Seeker                [8] ✔ Instashell             " | $lc
-        echo " [9] ✔ BluForce-FB           [10] ✔ Cupp             " | $lc
-        echo " [11] ✔ SpamWa               [12] ✔ RZP             " | $lc
-		echo " [13] ✔ Ip-Tracer            [14] ✔ OSIF             " | $lc
-		echo " [15] ✔ Bruter19             [16] ✔ CamHackers             " | $lc
-		echo " [17] ✔ TheFatRat            [18] ✔ PhoneInfoga             " | $lc
-        echo " [19] ✔ RequiredChan         [20] ✔ RED_HAWK             " | $lc
-        echo " [x] ✔ Exit                  [h] ✔ Help             " | $lc
+        echo " [1] ✔ Inshackle             [2] ✔ Kickthemout" 
+        echo " [3] ✔ Torghost              [4] ✔ HiddenEye" 
+        echo " [5] ✔ ByChan-Ddos           [6] ✔ UserRecon" 
+        echo " [7] ✔ Seeker                [8] ✔ Instashell" 
+        echo " [9] ✔ BluForce-FB           [10] ✔ Cupp" 
+        echo " [11] ✔ SpamWa               [12] ✔ RZP" 
+		echo " [13] ✔ Ip-Tracer            [14] ✔ OSIF" 
+		echo " [15] ✔ Bruter19             [16] ✔ CamHackers" 
+		echo " [17] ✔ TheFatRat            [18] ✔ PhoneInfoga" 
+        echo " [19] ✔ RequiredChan         [20] ✔ RED_HAWK"
+        echo " [21] ✔ Ghost"
+        echo " [x] ✔ Exit                  [h] ✔ Help" 
         echo ""
         echo -ne "❨${red}BCHackTool@ByCh4n${tp}❩:(${blue}./BCHackTool${tp})\n↳[${blink}${lightcyan}*${tp}]➢ " ; read option
         
@@ -1088,7 +956,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" | $lc
             x)
                 clear
                 cat banners/bcbanner
-                echo " BCHackTool Programini Tercih Ettiginiz Icin Tesekkurler {ByChan} !!" | $lc
+                echo " BCHackTool Programini Tercih Ettiginiz Icin Tesekkurler {ByChan} !!" 
                 echo ""
                 exit 0
                 ;;
