@@ -1,5 +1,4 @@
-![baycan](https://user-images.githubusercontent.com/67187998/96374955-9cd9c100-117e-11eb-8d1c-d7629e389d25.png)
-![3](https://user-images.githubusercontent.com/67187998/89735434-2710f500-da6b-11ea-9cd5-61c2d501237d.PNG)
+![baycan (1)](https://user-images.githubusercontent.com/67187998/96374988-df9b9900-117e-11eb-9ade-9436c2859707.png)
 
 TR
 --
