@@ -22,8 +22,6 @@ This Program Was Prepared By ByChan.
 
 Instagram 📸 : huseyinaltns
 
-All The Tools I Use In The YouTube Video And Download Through This Program You Can Log In With A Single Transaction. 💯
-
 It Is Very Simple To Use, It Is Written On Shell, And You Can Log In To All The Programs By Making The Setups Automatically Without Any Action. 💯
 
 The Errors Have Been Fixed. ✔
