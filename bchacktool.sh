@@ -33,12 +33,9 @@ if [[ $1 =~ ^(-h|--help|-y|--yardım) ]] ; then
     echo -e "$cyan    Developper         $white : $red https://github.com/lazypwny751$tp"
     exit 0
 fi
-if [[ $USER = "root" ]] ; then
-    echo "ok" &> /dev/null
-else
-    echo -e "$red sudo bash bchacktool.sh${tp} İle Deneyiniz.!"
-    exit 1
-fi
+
+[ $UID != 0 ] && { echo -e "${red}Lütfen${tp} '${blue}sudo bash $0${tp}'${tp} olarak tekrar çalıştırınız${red}" ; exit 1 ; }
+
 if [[ $1 =~ ^(-v|--version) ]] ; then
     echo "$version"
 elif [[ $1 =~ ^(-s|--sil) ]] ; then
