@@ -80,17 +80,6 @@ Innovations And Uses :
 
 - Bugs Fixed.
 
-ByChan
----
-
-- Dilerim Ki Sizler İçin Yararlı Olmuştur. :)
-
-- I think it's been good for you. :)
-
-- Kali Linux ✔
-
-- Termux ✔
-
 ![1](https://user-images.githubusercontent.com/67187998/89713271-5b1ee400-d99f-11ea-8bf1-e364204e736d.PNG)
 
 ![2](https://user-images.githubusercontent.com/67187998/89713272-5c501100-d99f-11ea-8bbd-5a1eed3c9fbf.PNG)
