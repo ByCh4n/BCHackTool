@@ -17,7 +17,6 @@ else
         |_____|                          
 "
         echo "Gerekli araçlar kuruluyor lütfen bekleyin.."
-        sleep 1
         {
 			apt install git -y
 			apt install python3 -y 
@@ -42,5 +41,4 @@ else
         }
 		touch chk
         echo "Gerekli araçlar kuruldu.."
-        sleep 1
 fi
