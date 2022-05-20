@@ -250,12 +250,12 @@ echo -e "${blink}${lightgreen}  ------------------------------------------------
 echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~" 
         echo ""
         echo " [1] ✔ Inshackle              [2] ✔ Kickthemout" 
-        echo " [3] ✔ ZPhisher               [4] ✔ UserRecon" 
+        echo " [3] ✔ Zphisher               [4] ✔ UserRecon" 
         echo " [5] ✔ Instashell             [6] ✔ Cupp" 
         echo " [7] ✔ SpamWa                 [8] ✔ Ip-Tracer" 
         echo " [9] ✔ OSIF                   [10] ✔ CamHackers" 
         echo " [11] ✔ TheFatRat             [12] ✔ RequiredChan" 
-	    echo " [13] ✔ RED_HAWK              [14] ✔ Ghost" 
+	echo " [13] ✔ RED_HAWK              [14] ✔ Ghost" 
         echo " [x] ✔ Exit" 
         echo ""
         echo -ne "❨${red}BCHackTool@ByCh4n${tp}❩:(${blue}./BCHackTool${tp})\n↳[${blink}${lightcyan}*${tp}]➢ " ; read option
@@ -315,11 +315,10 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~"
             else 
                 clear
                 cat banners/bcbanner  
-                echo -e $red "[0] ZPhisher İndiriliyor "
-                git clone https://github.com/htr-tech/zphisher > /dev/null 2>&1
+                echo -e $red "[0] Zphisher İndiriliyor "
+                git clone https://github.com/htr-tech/zphisher >  /dev/null 2>&1
                 spinlong
-                echo -e $red "[1] ZPhisher Kuruldu "
-                cd ..
+                echo -e $red "[2] Zphisher Kuruldu "
                 sleep 3
             fi
             clear
@@ -498,7 +497,7 @@ echo "  ~~~~~~~~~~~~~~~~~~~~~ BCHackTool ~~~~~~~~~~~~~~~~~~~~~~~~~"
             clear
             cd Cam-Hackers
             sudo python3 cam-hackers.py
-            cd ..
+            pressanykey
                 ;;
 		    11)
             if [[ -d TheFatRat ]] ; then
