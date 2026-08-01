@@ -18,7 +18,7 @@
 # variables
     blink='\e[5m'
     setdir=$PWD
-    version='BCHackTool v3.1'
+    version='BCHackTool v3.2'
 
 # help
 if [[ $1 =~ ^(-h|--help|-y|--yardım) ]] ; then
