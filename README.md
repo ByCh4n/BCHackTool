@@ -83,4 +83,4 @@ develop the project.
 
 ## License
 
-Licensed under the [GPL-3.0](LICENSE) license.
+Licensed under the [MIT](LICENSE) license.
