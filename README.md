@@ -5,6 +5,7 @@
 <h1 align="center">BCHackTool</h1>
 
 <p align="center">
+  <img src="https://github.com/ByCh4n/BCHackTool/actions/workflows/shellcheck.yml/badge.svg" alt="ShellCheck" />
   <img src="https://img.shields.io/github/license/ByCh4n/BCHackTool" alt="License" />
   <img src="https://img.shields.io/github/stars/ByCh4n/BCHackTool?style=social" alt="Stars" />
 </p>
