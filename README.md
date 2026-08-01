@@ -1,96 +1,85 @@
-![baycan (1)](https://user-images.githubusercontent.com/67187998/96374988-df9b9900-117e-11eb-9ade-9436c2859707.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/67187998/96374988-df9b9900-117e-11eb-9ade-9436c2859707.png" alt="BCHackTool" />
+</p>
 
-TR
---
-Bu Program ByChan Tarafından Hazırlanmıştır.
+<h1 align="center">BCHackTool</h1>
 
-Instagram 📸 : huseyinaltns
+<p align="center">
+  <img src="https://img.shields.io/github/license/ByCh4n/BCHackTool" alt="License" />
+  <img src="https://img.shields.io/github/stars/ByCh4n/BCHackTool?style=social" alt="Stars" />
+</p>
 
-Kullanımı Çok Basit Shell Üzerine Yazılmış Bir Programdır Ve Siz İşlem Yapmadan Otomatik Olarak Kurulumları Yaparak Bütün Programlara Giriş Yapıcaktır. 💯
+An all-in-one launcher and installer for popular penetration-testing and OSINT
+tools, built for **Kali Linux** and **Termux**. BCHackTool presents a colorized
+menu, downloads the selected tools automatically, and runs them for you — so you
+do not have to clone and configure each project by hand.
 
-Hatalar Giderildi. ✔
+## Features
 
-Programı İlk Çalıştırdığınız Zaman Öncelikli Olarak [19] Otomatik Güncelleştiriciyi Çalıştırınız. ✔
+- Menu-driven access to a curated set of pentesting / OSINT tools
+- Works on both **Kali Linux** and **Termux**
+- Colorized interface with an auto-rotating banner
+- One-key setup: dependencies and tools are installed on demand
+- Helper flags for version, author info, and cleanup
 
-Root Olarak Giriş Yapmadıysanız Root Olarak Giriş Yapınız Yada Komutların Başlarına "sudo" Komutunu Eklemeyi Unutmayınız ❕
+## Requirements
 
-- Programın Geliştirilmesine Yardımcı Olan lastpingu Arkadaşımıza Teşekkür Ederiz. :) <3
+- `bash`
+- `git` and an active internet connection
+- Root privileges on Kali Linux (`sudo`) — Termux runs without root
+- A Kali Linux or Termux environment
 
-EN
---
-This Program Was Prepared By ByChan.
+## Installation
 
-Instagram 📸 : huseyinaltns
+**Kali Linux**
+```bash
+git clone https://github.com/ByCh4n/BCHackTool
+cd BCHackTool
+chmod +x bchacktool.sh
+sudo ./bchacktool.sh
+```
 
-It Is Very Simple To Use, It Is Written On Shell, And You Can Log In To All The Programs By Making The Setups Automatically Without Any Action. 💯
+**Termux**
+```bash
+git clone https://github.com/ByCh4n/BCHackTool
+cd BCHackTool
+chmod +x bchacktool-termux.sh
+./bchacktool-termux.sh
+```
 
-The Errors Have Been Fixed. ✔
+## Usage
 
-When You First Run The Program, First Run The [19] Automatic Updater. ✔
+Run the script and pick a tool from the menu, or use one of the flags:
 
-If you have not logged in as Root, Please log in as Root or do not forget to add the command "sudo" to the beginning of the commands ❕
+| Flag | Description |
+|------|-------------|
+| `-v`, `--version` | Show the script version |
+| `-h`, `--help` | Show author and project information |
+| `-s`, `--sil` | Remove tools downloaded by the script |
 
-- Thank You To Our Friend lastpingu Who Helped Develop The Program. :) <3
+## Screenshots
 
---------------------------------------------------------------------------
+![BCHackTool](https://user-images.githubusercontent.com/67187998/89713271-5b1ee400-d99f-11ea-8bf1-e364204e736d.PNG)
+![BCHackTool](https://user-images.githubusercontent.com/67187998/89713272-5c501100-d99f-11ea-8bbd-5a1eed3c9fbf.PNG)
 
-Kali Linux - Installation(Kurulum):
---
-- git clone https://github.com/ByCh4n/BCHackTool
+## Disclaimer
 
-- cd BCHackTool
+This project is provided for **authorized security testing and educational
+purposes only**. Use it exclusively on systems you own or have explicit
+permission to test. The author accepts no liability for misuse or any damage
+caused by this tool.
 
-- chmod +x bchacktool.sh
+## Author
 
-- ./bchacktool.sh
+**Hüseyin Altıntaş — ByCh4n**
 
-Termux - Installation(Kurulum):
---
-- git clone https://github.com/ByCh4n/BCHackTool
+- GitHub: [@ByCh4n](https://github.com/ByCh4n)
+- LinkedIn: [huseyinaltns](https://www.linkedin.com/in/huseyinaltns/)
+- X: [@huseyinaltns](https://x.com/huseyinaltns)
 
-- cd BCHackTool
+Special thanks to [@lazypwny751](https://github.com/lazypwny751) for helping
+develop the project.
 
-- chmod +x bchacktool-termux.sh
+## License
 
-- ./bchacktool-termux.sh
-
---------------------------------------------------------------------------
-
-Yenilikler Ve Kullanımları :
-----
-- Renklendirildi Ve Banner Otomatik Değiştirelecek Şekilde Ayarlandı.
-
-- ./bchacktool.sh -v Parametresi Eklendi,Scriptin Sürümünü Gösterir.
-
-- ./bchacktool.sh -h Parametresi Eklendi,Scriptin Yapımcıları Hakkında Bilgi Verir.
-
-- ./bchacktool.sh -s Parametresi Eklendi,Scriptteki Programlar Çalışmaz İse Silinmesi İçin Kullanılır.
-
-- Hatalar Giderildi.
-
-Innovations And Uses :
-----
-- It's Colored And The Banner Is Set To Change Automatically.
-
-- . /bchacktool.sh - V parameter added, indicates the version of Scriptin.
-
-- . /bchacktool.sh -H parameter added, gives information about Scriptin makers.
-
-- . /bchacktool.sh the-s parameter is added, used to delete programs in the script if they do not work.
-
-- Bugs Fixed.
-
-ByChan
----
-
-- Dilerim Ki Sizler İçin Yararlı Olmuştur. :)
-
-- I think it's been good for you. :)
-
-- Kali Linux ✔
-
-- Termux ✔
-
-![1](https://user-images.githubusercontent.com/67187998/89713271-5b1ee400-d99f-11ea-8bf1-e364204e736d.PNG)
-
-![2](https://user-images.githubusercontent.com/67187998/89713272-5c501100-d99f-11ea-8bbd-5a1eed3c9fbf.PNG)
+Licensed under the [GPL-3.0](LICENSE) license.
