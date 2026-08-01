@@ -1,0 +1,23 @@
+# Script tarafından çalışma anında klonlanan üçüncü taraf araç dizinleri
+kalisources/
+inshackle/
+kickthemout/
+torghost/
+HiddenEye/
+Ddos-Attack-ByChan/
+userrecon/
+seeker/
+instashell/
+BluForce-FB/
+cupp/
+SpamWa/
+Rar-Zip-Crack/
+IP-Tracer/
+OSIF/
+Bruter19/
+Cam-Hackers/
+TheFatRat/
+
+# Üretilen / geçici dosyalar
+*.log
+*.tmp

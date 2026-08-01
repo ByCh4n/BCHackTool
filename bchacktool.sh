@@ -18,7 +18,7 @@
 # variables
     blink='\e[5m'
     setdir=$PWD
-    version='BCHackTool v2.1'
+    version='BCHackTool v3.1'
 
 # help
 if [[ $1 =~ ^(-h|--help|-y|--yardım) ]] ; then
@@ -73,7 +73,7 @@ elif [[ $1 =~ ^(-s|--sil) ]] ; then
         yesorno
     fi
     if [[ -d userrecon ]] ; then
-        foldx="serrecon"
+        foldx="userrecon"
         yesorno
     fi
     if [[ -d seeker ]] ; then
